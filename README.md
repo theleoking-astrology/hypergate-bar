@@ -4,7 +4,7 @@
 
 Unreleased source implementation for macOS 14+, initially validated on Apple Silicon/macOS 27. No account, backend, AI model, paid API, telemetry, birth information, or location permission is required. No public binary release is available yet.
 
-![Running native Dashboard](docs/screenshots/dashboard-today-dark.png)
+![Running native Dashboard](docs/screenshots/dashboard-final.png)
 
 ## Features
 
@@ -49,7 +49,7 @@ These are reproducible usage examples, not claims about the present sky. Dates n
 
 See [validation](docs/validation.md), [performance](docs/performance.md), [checklist](docs/implementation-checklist.md), [conventions](docs/calculations.md), [architecture](docs/architecture.md) and [privacy/network behavior](docs/privacy.md).
 
-The local run passed 25 package tests and two application-service tests. The macOS UI runner could not enable automation on this host; real windows, export, settings and lifecycle were inspected manually. OS scheduling readback reached 44 routine reminders, but visible test delivery and notification-click navigation remain unverified. Focus, sleep, permission and display-sharing policy can suppress delivery. Queue coverage can end before the forecast; replenishment requires the app to run again.
+The local package run passed 25 tests. Hosted macOS 14/Xcode 16.2 and macOS 26/Xcode 26.6 both passed the source checks, 25 package tests, three application-service tests, actual Dashboard/export/menu-popover/Quit UI test, and development packaging. [Verified run](https://github.com/theleoking-astrology/hypergate-bar/actions/runs/34283168283). Local UI automation remains blocked by this host's test-attachment/automation configuration; local windows were inspected directly. OS scheduling readback reached 44 routine reminders, but visible test delivery and notification-click navigation remain unverified. Focus, sleep, permission and display-sharing policy can suppress delivery. Queue coverage can end before the forecast; replenishment requires the app to run again.
 
 Updates stay disabled without verified publisher configuration. No trusted binary, notarization or updater-delivery claim is made.
 

@@ -15,4 +15,4 @@ Measured 2026-09-08 on M3 Max, 48 GiB RAM, macOS 27.0 (26A5425a), Xcode 26.6 / S
 
 Idle conditions: forecast completed; Dashboard, Settings and popover closed; alerts/updater disabled. Other development activity continued. CPU time uses ps hundredth-second resolution: zero reported increase means below measurement resolution, not literally zero instructions. Visible sky updates are minute bounded; event-boundary work remains scheduled.
 
-Raw evidence: [benchmark](performance-measurements.json), [launch](launch-measurement.json), [idle](idle-measurement.json). Reproduce with script/benchmark.sh, script/measure-launch.py (see arguments), and script/measure-idle.py PID OUTPUT.json using the stated conditions. Native export had 325 events for different local-midnight UTC bounds.
+Raw evidence: [benchmark](performance-measurements.json), [launch](launch-measurement.json), [idle](idle-measurement.json). Reproduce with `script/benchmark.sh`, `python3 script/measure-launch.py APP_PATH OUTPUT.json`, and `python3 script/measure-idle.py PID OUTPUT.json` using the stated conditions. Native export had 325 events for different local-midnight UTC bounds.

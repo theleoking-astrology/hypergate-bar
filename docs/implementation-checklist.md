@@ -11,10 +11,12 @@ Unreleased. Evidence recorded 2026-09-08; detailed limitations are in validation
 - [x] CLI/schema checks, native export parity and compiled consumer example.
 - [x] Documentation, pinned CI definitions, development packaging and publisher scripts.
 - [x] Actual launch, forecast, memory and five-minute idle measurements.
-- [ ] Automated UI suite: runner blocked before execution by host automation mode.
-- [ ] Actual menu-popover capture, removed-item recovery, full VoiceOver and reduced-system-preference acceptance.
+- [x] Automated Dashboard/export/menu-popover/singleton/Quit UI suite on both hosted macOS versions.
+- [x] Actual hosted menu-popover screenshot retrieved and visually inspected.
+- [ ] Removed-item recovery, full VoiceOver and reduced-system-preference acceptance.
 - [ ] Visible notification delivery and notification-click navigation.
-- [ ] Hosted macOS 14/26 CI results and physical macOS 14 validation.
+- [x] Hosted macOS 14/26 CI including development packaging (run 34283168283).
+- [ ] Physical macOS 14 hardware validation; local UI automation configuration remains blocked.
 - [ ] Protected publisher environment, five publisher settings and verified update key.
 - [ ] Developer ID archive, notarization/stapling, Gatekeeper and public binary release.
 
