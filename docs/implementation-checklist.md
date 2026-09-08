@@ -1,29 +1,21 @@
 # Implementation checklist
 
-Status: unreleased; implementation in progress.
+Unreleased. Evidence recorded 2026-09-08; detailed limitations are in validation.md.
 
-- [x] Launched offline menu-bar slice: ten bodies, Moon sign, next ingress.
-- [ ] Public source audit, repository creation, verified remote.
-- [ ] Event engine edge cases and independent reference validation.
-- [ ] Progressive cached 90-day forecast and stable identities.
-- [ ] Notification planning, reconciliation, persistence and user controls.
-- [ ] Dashboard, settings, lifecycle, accessibility and actual screenshots.
-- [ ] Shared CLI, JSON schema/export and compiled consumer example.
-- [ ] Documentation, CI, package validation and local artifact.
-- [ ] Measured launch/forecast/memory/idle behavior.
-- [ ] Publisher configuration and trusted release verification (separate gate).
+- [x] Launched native offline slice, ten bodies, Moon sign/phase and next ingress.
+- [x] Sanitized public source repository and verified initial remote.
+- [x] Adaptive event engine, identities, cancellation and progressive cached forecast.
+- [x] Independent 1,040-position and 88-event comparisons with frozen gates.
+- [x] Reminder planner, serialized reconciliation, persistence and native controls.
+- [x] Dashboard, details, Settings, introduction and actual light/dark screenshots.
+- [x] CLI/schema checks, native export parity and compiled consumer example.
+- [x] Documentation, pinned CI definitions, development packaging and publisher scripts.
+- [x] Actual launch, forecast, memory and five-minute idle measurements.
+- [ ] Automated UI suite: runner blocked before execution by host automation mode.
+- [ ] Actual menu-popover capture, removed-item recovery, full VoiceOver and reduced-system-preference acceptance.
+- [ ] Visible notification delivery and notification-click navigation.
+- [ ] Hosted macOS 14/26 CI results and physical macOS 14 validation.
+- [ ] Protected publisher environment, five publisher settings and verified update key.
+- [ ] Developer ID archive, notarization/stapling, Gatekeeper and public binary release.
 
-Checks are marked only with observed evidence. Unverified astronomical accuracy
-does not become an accuracy claim because the application builds.
-
-## First slice evidence — 2026-09-08
-
-Xcode application built, ad-hoc signed and launched on macOS 27.0 / M3 Max.
-The actual Dashboard displayed all ten positions and the next Moon ingress.
-Screenshot: screenshots/offline-slice.png. Eleven Swift Testing tests pass,
-including synthetic repeated passes and a real Moon ingress sign transition.
-This is not independent astronomical accuracy validation or a public binary release.
-
-Build output uses a workspace-specific directory in ~/Library/Caches/HypergateBar.
-File-provider metadata added to .app bundles under Documents prevented signing;
-building outside the file-provider directory resolved that local issue.
+Open rows remain acceptance gates. Source publication and local development proceed independently of trusted distribution.

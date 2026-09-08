@@ -1,0 +1,23 @@
+# Calculation conventions and limits
+
+The default provider is the MIT C implementation of Astronomy Engine, pinned to revision `865d3da7d8112bbc7911238052c6af4aaf877181`. `Packages/HypergateCore/provenance.json` records upstream paths and SHA-256 hashes. `python3 script/verify-vendor.py` verifies the vendored C source, header, and license offline; `--update` downloads and verifies that same pinned revision. A revision upgrade requires an explicit provenance change and a new accuracy review.
+
+Positions cover Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, and Pluto. Longitude is tropical, geocentric, true ecliptic/equinox of the observation date. Zodiac signs divide that longitude into twelve equal 30-degree sectors; these are not astronomical constellation boundaries.
+
+For every body, the wrapper calls `Astronomy_BackdatePosition` with Earth as observer and aberration enabled. It resets the returned vector’s epoch to the observation time before `Astronomy_Ecliptic` converts it to the true date frame. This applies a consistent light-time and aberration policy to all ten bodies and avoids the simplified Moon branch in `Astronomy_GeoVector`. `Astronomy_EclipticLongitude` is not used because its output is heliocentric. The upstream date-frame conversion includes its precession/nutation model. Gravitational deflection is omitted.
+
+Strict ISO 8601 input requires seconds and an explicit numeric UTC offset or `Z`; impossible civil dates are rejected before creating an ephemeris time. UTC seconds are converted to Astronomy Engine UT days and its delta-T model supplies TT once. Leap-second `:60` spelling is rejected. The provider’s approximation of UT/UTC and future delta-T assumptions contribute to model error; event roots are physical UTC instants, and display-zone changes never move them.
+
+The supported validation interval is `2000-01-01T00:00:00Z` through, but excluding, `2051-01-01T00:00:00Z`. Independent position samples cover January and July in every year plus additional current/end-of-range epochs. Event fixtures are representative 2026–early-2027 roots; passing those samples is not a proof of every possible event or instant across 51 years. Consult the measured accuracy matrix before making downstream precision claims.
+
+Longitudinal velocity uses converged five-point finite differences at 600- and 300-second spacing; disagreement of at least 0.00001 degree/day fails explicitly. Positive-to-negative velocity defines a retrograde station, and negative-to-positive defines a direct station. Sun and Moon stations are excluded. The editable stationary display threshold defaults to 0.01 degree/day and does not determine the exact root.
+
+Ingress searches solve 30-degree crossings on unwrapped longitude and confirm the signs immediately before and after. Aspect pairs follow canonical body order, preserving directed square branches 90/270 and opposition 180. Optional conjunction, semisquare, and sesquiquadrate branches are calculated separately. Relative-motion extrema subdivide intervals, preserving repeated passes when endpoints alone would miss two roots. A tangency does not count as an ingress because the sign does not change.
+
+Bisection narrows a bracket to 0.005 seconds, stricter than the predeclared one-second numerical gate. This is numerical convergence, not astronomical accuracy. Half-open subinterval ownership prevents duplicate endpoint roots. Canonical day/pass identities and one-to-one persisted matching within two seconds preserve separate event passes. Queries span at most 90 elapsed days and have a finite work budget; an unresolved or exhausted query is reported as incomplete instead of successful empty output.
+
+Finite sampling cannot certify arbitrary pathological functions supplied by third-party synthetic providers. The adaptive checks and tests target smooth planetary longitude functions and the documented validation range. Near-tangencies and event-count/topology disagreements require explicit investigation; do not infer event absence from a failed search.
+
+Current aspects use angular error within the configured orb: default 3 degrees for major aspects and 1 degree for minor aspects. The sign of angular error multiplied by relative longitudinal velocity determines applying/separating status. A currently in-orb aspect is not the same as an exact event. Conjunctions are not inherently described as harmful.
+
+Primary references: [pinned Astronomy Engine C implementation](https://github.com/cosinekitty/astronomy/blob/865d3da7d8112bbc7911238052c6af4aaf877181/source/c/astronomy.c), [Horizons API](https://ssd-api.jpl.nasa.gov/doc/horizons.html), and [PyERFA](https://github.com/liberfa/pyerfa).

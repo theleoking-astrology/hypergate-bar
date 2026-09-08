@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "longitudeArcseconds": 60,
+  "rootBracketSeconds": 1,
+  "moonIngressSeconds": 300,
+  "fastCrossingSeconds": 3600,
+  "slowCrossingSeconds": 21600,
+  "stationSeconds": 21600,
+  "fastRateDegreesPerDay": 1,
+  "referenceConvergenceSeconds": 1,
+  "status": "Pre-registered acceptance gates; not measured accuracy claims"
+}

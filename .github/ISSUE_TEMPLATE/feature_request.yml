@@ -1,0 +1,16 @@
+name: Feature request
+description: Propose a focused improvement to this offline native utility
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What user problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Proposed behavior and acceptance evidence
+      description: Keep the standalone, offline, native scope in mind.
+    validations:
+      required: true

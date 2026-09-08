@@ -1,0 +1,80 @@
+{
+  "launchToFirstRealSkySeconds": 0.5451386250206269,
+  "pollingResolutionSeconds": 0.01,
+  "pid": 77143,
+  "definition": "Fresh process spawn to an engine-derived sky snapshot receipt; excludes build time and is not pixel-presentation latency",
+  "snapshot": {
+    "at": "2026-09-08T21:33:14.043Z",
+    "calculatedAt": "2026-09-08T21:33:14.081Z",
+    "positions": [
+      {
+        "body": "sun",
+        "latitude": 4.000934125590882e-05,
+        "longitude": 166.24855357994278,
+        "velocity": 0.9714345265117571
+      },
+      {
+        "body": "moon",
+        "latitude": 1.1661068631768483,
+        "longitude": 137.0509124316398,
+        "velocity": 14.178558409272226
+      },
+      {
+        "body": "mercury",
+        "latitude": 0.9235244669558672,
+        "longitude": 176.9528963207207,
+        "velocity": 1.7258548320041882
+      },
+      {
+        "body": "venus",
+        "latitude": -4.411497344438786,
+        "longitude": 209.03425720091516,
+        "velocity": 0.6813423877729292
+      },
+      {
+        "body": "mars",
+        "latitude": 0.6544342873910027,
+        "longitude": 108.35707907145918,
+        "velocity": 0.6223419769501106
+      },
+      {
+        "body": "jupiter",
+        "latitude": 0.5447197256203345,
+        "longitude": 135.3356449004995,
+        "velocity": 0.20405958824426307
+      },
+      {
+        "body": "saturn",
+        "latitude": -2.6740996762656537,
+        "longitude": 13.197192824772346,
+        "velocity": -0.06521081977075482
+      },
+      {
+        "body": "uranus",
+        "latitude": -0.1525197207646942,
+        "longitude": 65.69522988303875,
+        "velocity": 0.0016328780002368148
+      },
+      {
+        "body": "neptune",
+        "latitude": -1.4130412467346254,
+        "longitude": 3.469438999028171,
+        "velocity": -0.026167401450493344
+      },
+      {
+        "body": "pluto",
+        "latitude": -4.2999812132271815,
+        "longitude": 303.37740820364104,
+        "velocity": -0.015729641095731495
+      }
+    ],
+    "provider": {
+      "convention": "tropical-geocentric-true-ecliptic-of-date; light-time+aberration; no gravitational deflection; upstream delta-T; v1",
+      "earliest": "2000-01-01T00:00:00.000Z",
+      "latestExclusive": "2051-01-01T00:00:00.000Z",
+      "name": "Astronomy Engine",
+      "revision": "865d3da7d8112bbc7911238052c6af4aaf877181"
+    },
+    "schemaVersion": 1
+  }
+}

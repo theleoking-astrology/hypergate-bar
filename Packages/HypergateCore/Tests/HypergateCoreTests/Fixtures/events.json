@@ -1,0 +1,1031 @@
+[
+  {
+    "kind": "square",
+    "bodies": [
+      "moon",
+      "saturn"
+    ],
+    "at": "2026-01-02T07:09:28.240Z",
+    "target": 90,
+    "localRateDegreesPerDay": 14.991073235183311,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 7.64648898479222e-07
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "moon",
+      "neptune"
+    ],
+    "at": "2026-01-02T12:23:38.195Z",
+    "target": 90,
+    "localRateDegreesPerDay": 15.021392708488372,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 5.858976258209117e-07
+  },
+  {
+    "kind": "ingress",
+    "bodies": [
+      "moon"
+    ],
+    "at": "2026-01-02T13:09:00.307Z",
+    "target": 90,
+    "localRateDegreesPerDay": 15.031609306713815,
+    "toleranceSeconds": 300,
+    "referenceConvergenceSeconds": 1.869710096035197e-07
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "moon",
+      "mercury"
+    ],
+    "at": "2026-01-02T14:57:51.336Z",
+    "target": 180,
+    "localRateDegreesPerDay": 13.488538821800246,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 2.1271130089237387e-06
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "moon",
+      "venus"
+    ],
+    "at": "2026-01-03T08:40:11.214Z",
+    "target": 180,
+    "localRateDegreesPerDay": 13.637755315212532,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 1.422486420522968e-07
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "sun",
+      "moon"
+    ],
+    "at": "2026-01-03T10:02:54.518Z",
+    "target": 180,
+    "localRateDegreesPerDay": -13.863578588759708,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 5.597265888788757e-08
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "moon",
+      "mars"
+    ],
+    "at": "2026-01-03T12:37:11.122Z",
+    "target": 180,
+    "localRateDegreesPerDay": 14.08788694734797,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 2.2799526213082863e-07
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "moon",
+      "pluto"
+    ],
+    "at": "2026-01-04T18:25:12.722Z",
+    "target": 180,
+    "localRateDegreesPerDay": 14.409987597845772,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 3.6021700583458372e-06
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "moon",
+      "uranus"
+    ],
+    "at": "2026-01-06T13:04:39.930Z",
+    "target": 90,
+    "localRateDegreesPerDay": 13.664488241120669,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 9.26293660194742e-06
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "moon",
+      "saturn"
+    ],
+    "at": "2026-01-08T17:45:38.478Z",
+    "target": 180,
+    "localRateDegreesPerDay": 12.616990114390926,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 1.9151521095889614e-07
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "moon",
+      "neptune"
+    ],
+    "at": "2026-01-08T23:22:42.731Z",
+    "target": 180,
+    "localRateDegreesPerDay": 12.584654009274313,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 6.517319803382309e-08
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "venus",
+      "jupiter"
+    ],
+    "at": "2026-01-09T17:34:56.983Z",
+    "target": 180,
+    "localRateDegreesPerDay": 1.3928643472590267,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 9.16765953469517e-08
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "moon",
+      "mercury"
+    ],
+    "at": "2026-01-10T00:33:33.551Z",
+    "target": 270,
+    "localRateDegreesPerDay": 10.689734932742066,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 7.236149769787714e-08
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "sun",
+      "jupiter"
+    ],
+    "at": "2026-01-10T08:42:09.646Z",
+    "target": 180,
+    "localRateDegreesPerDay": 1.1539258381888038,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 1.9152635533350375e-08
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "mars",
+      "jupiter"
+    ],
+    "at": "2026-01-10T14:25:05.395Z",
+    "target": 180,
+    "localRateDegreesPerDay": 0.9075473458820702,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 3.788111196121794e-08
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "moon",
+      "jupiter"
+    ],
+    "at": "2026-01-10T15:08:15.666Z",
+    "target": 90,
+    "localRateDegreesPerDay": 12.258720253878918,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 9.536613056359761e-06
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "moon",
+      "mars"
+    ],
+    "at": "2026-01-10T15:11:42.770Z",
+    "target": 270,
+    "localRateDegreesPerDay": 11.35063206540767,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 4.5507859902123265e-07
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "sun",
+      "moon"
+    ],
+    "at": "2026-01-10T15:48:23.559Z",
+    "target": 90,
+    "localRateDegreesPerDay": -11.098761728232569,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 7.08009992617435e-08
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "moon",
+      "venus"
+    ],
+    "at": "2026-01-10T17:54:14.206Z",
+    "target": 270,
+    "localRateDegreesPerDay": 10.841344668908242,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 4.1133591457808657e-07
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "moon",
+      "pluto"
+    ],
+    "at": "2026-01-11T17:02:36.535Z",
+    "target": 270,
+    "localRateDegreesPerDay": 11.90737729336025,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 2.693338747496148e-07
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "moon",
+      "uranus"
+    ],
+    "at": "2026-01-13T18:48:54.731Z",
+    "target": 180,
+    "localRateDegreesPerDay": 11.863029318574647,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 4.501607921861119e-06
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "mercury",
+      "jupiter"
+    ],
+    "at": "2026-01-14T08:17:08.593Z",
+    "target": 180,
+    "localRateDegreesPerDay": 1.7491473733038911,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 1.4039087093916693e-09
+  },
+  {
+    "kind": "ingress",
+    "bodies": [
+      "venus"
+    ],
+    "at": "2026-01-17T12:43:25.227Z",
+    "target": 300,
+    "localRateDegreesPerDay": 1.2574438752476091,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 1.030339004436552e-05
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "moon",
+      "jupiter"
+    ],
+    "at": "2026-01-18T01:13:33.797Z",
+    "target": 180,
+    "localRateDegreesPerDay": 12.49269061104075,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 4.3578630874670953e-07
+  },
+  {
+    "kind": "ingress",
+    "bodies": [
+      "sun"
+    ],
+    "at": "2026-01-20T01:44:56.071Z",
+    "target": 300,
+    "localRateDegreesPerDay": 1.0181799760781756,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 8.122907254484065e-06
+  },
+  {
+    "kind": "ingress",
+    "bodies": [
+      "mercury"
+    ],
+    "at": "2026-01-20T16:41:10.558Z",
+    "target": 300,
+    "localRateDegreesPerDay": 1.670939833440487,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 6.757282133839974e-06
+  },
+  {
+    "kind": "ingress",
+    "bodies": [
+      "mars"
+    ],
+    "at": "2026-01-23T09:16:42.860Z",
+    "target": 300,
+    "localRateDegreesPerDay": 0.7793530846472516,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 9.011472311851975e-07
+  },
+  {
+    "kind": "ingress",
+    "bodies": [
+      "neptune"
+    ],
+    "at": "2026-01-26T17:34:55.637Z",
+    "target": 0,
+    "localRateDegreesPerDay": 0.02542165532699498,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 1.1591545799115408e-06
+  },
+  {
+    "kind": "station_direct",
+    "bodies": [
+      "uranus"
+    ],
+    "at": "2026-02-04T02:33:26.909Z",
+    "target": 0,
+    "localRateDegreesPerDay": -2.0328790734103208e-20,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 2.0046929157708365e-05
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "mercury",
+      "uranus"
+    ],
+    "at": "2026-02-05T12:13:31.771Z",
+    "target": 270,
+    "localRateDegreesPerDay": 1.7667229763245178,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 2.2239009338351464e-08
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "venus",
+      "uranus"
+    ],
+    "at": "2026-02-08T09:48:44.967Z",
+    "target": 270,
+    "localRateDegreesPerDay": 1.2494012051942596,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 2.7516301313903528e-08
+  },
+  {
+    "kind": "ingress",
+    "bodies": [
+      "saturn"
+    ],
+    "at": "2026-02-14T00:11:34.422Z",
+    "target": 0,
+    "localRateDegreesPerDay": 0.11005297608164222,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 4.462643034093745e-08
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "sun",
+      "uranus"
+    ],
+    "at": "2026-02-16T05:01:37.935Z",
+    "target": 270,
+    "localRateDegreesPerDay": 0.999434306862679,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 2.9484307236749338e-08
+  },
+  {
+    "kind": "station_retrograde",
+    "bodies": [
+      "mercury"
+    ],
+    "at": "2026-02-26T06:48:09.910Z",
+    "target": 0,
+    "localRateDegreesPerDay": -3.903127820947816e-18,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 7.246655302832031e-06
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "mars",
+      "uranus"
+    ],
+    "at": "2026-02-27T16:20:48.588Z",
+    "target": 270,
+    "localRateDegreesPerDay": 0.7674290169609472,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 2.5598570257064247e-08
+  },
+  {
+    "kind": "station_direct",
+    "bodies": [
+      "jupiter"
+    ],
+    "at": "2026-03-11T03:30:10.367Z",
+    "target": 0,
+    "localRateDegreesPerDay": 0.0,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 4.788061338628635e-05
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "venus",
+      "jupiter"
+    ],
+    "at": "2026-03-18T16:08:54.475Z",
+    "target": 270,
+    "localRateDegreesPerDay": 1.2146018740189715,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 1.1928394570424475e-07
+  },
+  {
+    "kind": "station_direct",
+    "bodies": [
+      "mercury"
+    ],
+    "at": "2026-03-20T19:32:50.110Z",
+    "target": 0,
+    "localRateDegreesPerDay": 1.3010426069826053e-18,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 1.46220578087212e-06
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "venus",
+      "pluto"
+    ],
+    "at": "2026-04-03T22:38:01.965Z",
+    "target": 90,
+    "localRateDegreesPerDay": 1.2144364900719151,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 3.6396668295725e-08
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "sun",
+      "jupiter"
+    ],
+    "at": "2026-04-05T22:22:35.862Z",
+    "target": 270,
+    "localRateDegreesPerDay": 0.9051021141225237,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 2.2654415211097523e-07
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "sun",
+      "pluto"
+    ],
+    "at": "2026-04-25T16:32:42.673Z",
+    "target": 90,
+    "localRateDegreesPerDay": 0.9685070487697947,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 3.0425830868425243e-08
+  },
+  {
+    "kind": "ingress",
+    "bodies": [
+      "uranus"
+    ],
+    "at": "2026-04-26T00:51:21.551Z",
+    "target": 60,
+    "localRateDegreesPerDay": 0.05439207296511219,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 6.320571621853144e-07
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "mercury",
+      "jupiter"
+    ],
+    "at": "2026-04-26T18:33:12.765Z",
+    "target": 270,
+    "localRateDegreesPerDay": 1.6131498381999452,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 3.909167236420442e-06
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "mars",
+      "jupiter"
+    ],
+    "at": "2026-05-05T02:08:14.383Z",
+    "target": 270,
+    "localRateDegreesPerDay": 0.6160658328667297,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 1.9929948853899225e-09
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "mercury",
+      "pluto"
+    ],
+    "at": "2026-05-05T22:08:11.184Z",
+    "target": 90,
+    "localRateDegreesPerDay": 2.007127529570051,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 6.623800234704588e-06
+  },
+  {
+    "kind": "station_retrograde",
+    "bodies": [
+      "pluto"
+    ],
+    "at": "2026-05-06T14:29:59.311Z",
+    "target": 0,
+    "localRateDegreesPerDay": 1.0164395367051604e-20,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 8.162747913041988e-05
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "venus",
+      "neptune"
+    ],
+    "at": "2026-05-22T06:31:51.450Z",
+    "target": 90,
+    "localRateDegreesPerDay": 1.1684255033968376,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 1.681329503988005e-08
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "mars",
+      "pluto"
+    ],
+    "at": "2026-05-26T04:02:00.129Z",
+    "target": 90,
+    "localRateDegreesPerDay": 0.755121199646594,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 2.6015804634268213e-08
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "venus",
+      "saturn"
+    ],
+    "at": "2026-05-29T03:02:37.327Z",
+    "target": 90,
+    "localRateDegreesPerDay": 1.0966730916331393,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 1.6122012043609276e-06
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "mercury",
+      "neptune"
+    ],
+    "at": "2026-06-04T00:18:23.613Z",
+    "target": 90,
+    "localRateDegreesPerDay": 1.5584001559547973,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 3.781779404483075e-08
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "mercury",
+      "saturn"
+    ],
+    "at": "2026-06-10T05:38:42.537Z",
+    "target": 90,
+    "localRateDegreesPerDay": 1.1939197280385767,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 1.6454279116427672e-08
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "venus",
+      "pluto"
+    ],
+    "at": "2026-06-17T20:38:10.401Z",
+    "target": 180,
+    "localRateDegreesPerDay": 1.175556221203034,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 8.564547151993927e-08
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "sun",
+      "neptune"
+    ],
+    "at": "2026-06-25T22:38:24.411Z",
+    "target": 90,
+    "localRateDegreesPerDay": 0.947376719717715,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 6.220889255002501e-07
+  },
+  {
+    "kind": "station_retrograde",
+    "bodies": [
+      "mercury"
+    ],
+    "at": "2026-06-29T17:35:55.119Z",
+    "target": 0,
+    "localRateDegreesPerDay": -2.6020852139652106e-18,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 2.6035344475902133e-06
+  },
+  {
+    "kind": "ingress",
+    "bodies": [
+      "jupiter"
+    ],
+    "at": "2026-06-30T05:52:19.780Z",
+    "target": 120,
+    "localRateDegreesPerDay": 0.21379367510914063,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 6.89160191085338e-08
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "sun",
+      "saturn"
+    ],
+    "at": "2026-07-06T10:47:03.288Z",
+    "target": 90,
+    "localRateDegreesPerDay": 0.9190860211903249,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 3.4199341784045406e-07
+  },
+  {
+    "kind": "station_retrograde",
+    "bodies": [
+      "neptune"
+    ],
+    "at": "2026-07-07T10:53:29.493Z",
+    "target": 0,
+    "localRateDegreesPerDay": -2.0328790734103208e-20,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 2.8829532068633257e-05
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "jupiter",
+      "pluto"
+    ],
+    "at": "2026-07-20T14:44:55.395Z",
+    "target": 180,
+    "localRateDegreesPerDay": 0.24418534877968395,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 9.362550795674921e-06
+  },
+  {
+    "kind": "station_direct",
+    "bodies": [
+      "mercury"
+    ],
+    "at": "2026-07-23T22:57:51.396Z",
+    "target": 0,
+    "localRateDegreesPerDay": 2.6020852139652106e-18,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 7.053350682480486e-06
+  },
+  {
+    "kind": "station_retrograde",
+    "bodies": [
+      "saturn"
+    ],
+    "at": "2026-07-26T19:53:48.582Z",
+    "target": 0,
+    "localRateDegreesPerDay": 2.0328790734103208e-20,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 5.339019236223763e-06
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "sun",
+      "pluto"
+    ],
+    "at": "2026-07-27T06:55:04.830Z",
+    "target": 180,
+    "localRateDegreesPerDay": 0.9787478500085052,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 2.508954678448461e-09
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "venus",
+      "mars"
+    ],
+    "at": "2026-07-29T07:09:49.853Z",
+    "target": 90,
+    "localRateDegreesPerDay": 0.37104593128753266,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 2.849111272272415e-06
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "venus",
+      "neptune"
+    ],
+    "at": "2026-08-10T22:01:50.025Z",
+    "target": 180,
+    "localRateDegreesPerDay": 1.0037395116239747,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 3.9143792444470596e-08
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "mercury",
+      "pluto"
+    ],
+    "at": "2026-08-12T01:19:40.441Z",
+    "target": 180,
+    "localRateDegreesPerDay": 1.7542708966228906,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 9.798628951511915e-09
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "mars",
+      "neptune"
+    ],
+    "at": "2026-08-17T09:52:36.363Z",
+    "target": 90,
+    "localRateDegreesPerDay": 0.6744861265527987,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 9.93924898031808e-07
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "venus",
+      "saturn"
+    ],
+    "at": "2026-08-21T12:43:08.482Z",
+    "target": 180,
+    "localRateDegreesPerDay": 0.9514494608177144,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 4.955408420423045e-07
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "mars",
+      "saturn"
+    ],
+    "at": "2026-09-01T09:58:37.738Z",
+    "target": 90,
+    "localRateDegreesPerDay": 0.6904668063579864,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 1.7426782477857948e-07
+  },
+  {
+    "kind": "station_retrograde",
+    "bodies": [
+      "uranus"
+    ],
+    "at": "2026-09-10T18:27:04.857Z",
+    "target": 0,
+    "localRateDegreesPerDay": -7.623296525288703e-21,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 1.555531468976079e-05
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "mercury",
+      "neptune"
+    ],
+    "at": "2026-09-12T16:37:51.025Z",
+    "target": 180,
+    "localRateDegreesPerDay": 1.6808345038693249,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 2.7758280695075487e-08
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "mercury",
+      "saturn"
+    ],
+    "at": "2026-09-18T10:00:38.129Z",
+    "target": 180,
+    "localRateDegreesPerDay": 1.625242810275762,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 9.095826568846229e-07
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "sun",
+      "neptune"
+    ],
+    "at": "2026-09-26T01:36:21.689Z",
+    "target": 180,
+    "localRateDegreesPerDay": 1.0074739296807889,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 4.387353530784898e-08
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "mercury",
+      "mars"
+    ],
+    "at": "2026-10-02T09:14:21.647Z",
+    "target": 90,
+    "localRateDegreesPerDay": 0.7148620518143036,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 3.0143162422228793e-06
+  },
+  {
+    "kind": "station_retrograde",
+    "bodies": [
+      "venus"
+    ],
+    "at": "2026-10-03T07:15:54.603Z",
+    "target": 0,
+    "localRateDegreesPerDay": -9.75781955236954e-19,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 1.8660492217415584e-05
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "mars",
+      "pluto"
+    ],
+    "at": "2026-10-03T10:38:54.076Z",
+    "target": 180,
+    "localRateDegreesPerDay": 0.5838189902321069,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 1.682463733623047e-08
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "sun",
+      "saturn"
+    ],
+    "at": "2026-10-04T12:29:12.236Z",
+    "target": 180,
+    "localRateDegreesPerDay": 1.0635806648784178,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 1.857814303871802e-15
+  },
+  {
+    "kind": "station_direct",
+    "bodies": [
+      "pluto"
+    ],
+    "at": "2026-10-16T01:33:13.114Z",
+    "target": 0,
+    "localRateDegreesPerDay": 5.082197683525802e-21,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 0.00017240739507267834
+  },
+  {
+    "kind": "station_direct",
+    "bodies": [
+      "venus"
+    ],
+    "at": "2026-11-14T00:27:27.519Z",
+    "target": 0,
+    "localRateDegreesPerDay": -1.6263032587282567e-19,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 2.9978500211548502e-05
+  },
+  {
+    "kind": "square",
+    "bodies": [
+      "sun",
+      "mars"
+    ],
+    "at": "2026-11-19T17:49:01.077Z",
+    "target": 90,
+    "localRateDegreesPerDay": 0.5789677781839884,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 8.516737233989696e-06
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "sun",
+      "uranus"
+    ],
+    "at": "2026-11-25T22:41:19.211Z",
+    "target": 180,
+    "localRateDegreesPerDay": 1.053120254639202,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 4.6635418602601316e-09
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "mercury",
+      "uranus"
+    ],
+    "at": "2026-12-08T10:29:11.049Z",
+    "target": 180,
+    "localRateDegreesPerDay": 1.5634016546161709,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 4.869172149253101e-07
+  },
+  {
+    "kind": "station_direct",
+    "bodies": [
+      "saturn"
+    ],
+    "at": "2026-12-10T23:27:49.973Z",
+    "target": 0,
+    "localRateDegreesPerDay": -8.131516293641283e-20,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 3.254692864183145e-05
+  },
+  {
+    "kind": "station_direct",
+    "bodies": [
+      "neptune"
+    ],
+    "at": "2026-12-12T22:19:04.308Z",
+    "target": 0,
+    "localRateDegreesPerDay": 0.0,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 1.0703340812607664e-05
+  },
+  {
+    "kind": "station_retrograde",
+    "bodies": [
+      "jupiter"
+    ],
+    "at": "2026-12-13T00:53:27.396Z",
+    "target": 0,
+    "localRateDegreesPerDay": 2.0328790734103208e-20,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 5.3960551445193794e-05
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "venus",
+      "uranus"
+    ],
+    "at": "2027-01-09T08:19:42.474Z",
+    "target": 180,
+    "localRateDegreesPerDay": 1.0780167833257537,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 6.195941713761547e-07
+  },
+  {
+    "kind": "station_retrograde",
+    "bodies": [
+      "mars"
+    ],
+    "at": "2027-01-10T12:59:11.201Z",
+    "target": 0,
+    "localRateDegreesPerDay": 0.0,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 6.821325843296439e-05
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "mercury",
+      "mars"
+    ],
+    "at": "2027-02-07T07:14:46.507Z",
+    "target": 180,
+    "localRateDegreesPerDay": 0.7691636665961514,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 8.173068566586471e-07
+  },
+  {
+    "kind": "station_direct",
+    "bodies": [
+      "uranus"
+    ],
+    "at": "2027-02-08T12:29:29.182Z",
+    "target": 0,
+    "localRateDegreesPerDay": 2.541098841762901e-21,
+    "toleranceSeconds": 21600,
+    "referenceConvergenceSeconds": 6.345279317359134e-05
+  },
+  {
+    "kind": "opposition",
+    "bodies": [
+      "sun",
+      "mars"
+    ],
+    "at": "2027-02-19T15:50:55.163Z",
+    "target": 180,
+    "localRateDegreesPerDay": 1.4061959916668754,
+    "toleranceSeconds": 3600,
+    "referenceConvergenceSeconds": 1.622309788111124e-06
+  }
+]

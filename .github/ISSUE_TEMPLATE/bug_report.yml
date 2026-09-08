@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a reproducible HypergateBar problem without private information
+body:
+  - type: input
+    id: build
+    attributes:
+      label: Source commit or app version/build
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: macOS version and hardware architecture
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps, expected result, and actual result
+      description: For calculation issues include the UTC query, selected bodies/types, and provider revision. Do not include credentials or private records.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Non-sensitive evidence
+      description: Distinguish calculated coverage, pending reminders, and actual delivery. Crop screenshots to HypergateBar.

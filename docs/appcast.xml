@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>HypergateBar updates</title>
+    <link>https://github.com/theleoking-astrology/hypergate-bar</link>
+    <description>No public binary release has been published.</description>
+    <language>en</language>
+  </channel>
+</rss>

@@ -1,0 +1,291 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HypergateBar JSON document v1",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "provider",
+        "at",
+        "calculatedAt",
+        "positions"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "provider": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "revision",
+            "convention",
+            "earliest",
+            "latestExclusive"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "revision": {
+              "type": "string"
+            },
+            "convention": {
+              "type": "string"
+            },
+            "earliest": {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+            },
+            "latestExclusive": {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+            }
+          }
+        },
+        "at": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+        },
+        "calculatedAt": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+        },
+        "positions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "body",
+              "longitude",
+              "latitude",
+              "velocity"
+            ],
+            "properties": {
+              "body": {
+                "enum": [
+                  "sun",
+                  "moon",
+                  "mercury",
+                  "venus",
+                  "mars",
+                  "jupiter",
+                  "saturn",
+                  "uranus",
+                  "neptune",
+                  "pluto"
+                ]
+              },
+              "longitude": {
+                "type": "number",
+                "minimum": 0,
+                "exclusiveMaximum": 360
+              },
+              "latitude": {
+                "type": "number",
+                "minimum": -90,
+                "maximum": 90
+              },
+              "velocity": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schemaVersion",
+        "algorithmRevision",
+        "provider",
+        "calculatedAt",
+        "query",
+        "coverageEnd",
+        "complete",
+        "events"
+      ],
+      "properties": {
+        "schemaVersion": {
+          "const": 1
+        },
+        "algorithmRevision": {
+          "type": "string"
+        },
+        "provider": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "name",
+            "revision",
+            "convention",
+            "earliest",
+            "latestExclusive"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "revision": {
+              "type": "string"
+            },
+            "convention": {
+              "type": "string"
+            },
+            "earliest": {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+            },
+            "latestExclusive": {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+            }
+          }
+        },
+        "calculatedAt": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+        },
+        "query": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "from",
+            "to",
+            "bodies",
+            "types"
+          ],
+          "properties": {
+            "from": {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+            },
+            "to": {
+              "type": "string",
+              "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+            },
+            "bodies": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "sun",
+                  "moon",
+                  "mercury",
+                  "venus",
+                  "mars",
+                  "jupiter",
+                  "saturn",
+                  "uranus",
+                  "neptune",
+                  "pluto"
+                ]
+              }
+            },
+            "types": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "ingress",
+                  "square",
+                  "opposition",
+                  "station_retrograde",
+                  "station_direct",
+                  "conjunction",
+                  "semisquare",
+                  "sesquiquadrate"
+                ]
+              }
+            }
+          }
+        },
+        "coverageEnd": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+        },
+        "complete": {
+          "type": "boolean"
+        },
+        "events": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "instant",
+              "kind",
+              "bodies"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "instant": {
+                "type": "string",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}\\.\\d{3}Z$"
+              },
+              "kind": {
+                "enum": [
+                  "ingress",
+                  "square",
+                  "opposition",
+                  "station_retrograde",
+                  "station_direct",
+                  "conjunction",
+                  "semisquare",
+                  "sesquiquadrate"
+                ]
+              },
+              "bodies": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "enum": [
+                    "sun",
+                    "moon",
+                    "mercury",
+                    "venus",
+                    "mars",
+                    "jupiter",
+                    "saturn",
+                    "uranus",
+                    "neptune",
+                    "pluto"
+                  ]
+                }
+              },
+              "longitude": {
+                "type": "number"
+              },
+              "aspectAngle": {
+                "type": "number"
+              },
+              "previousSign": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 11
+              },
+              "enteredSign": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 11
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

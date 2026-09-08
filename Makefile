@@ -2,9 +2,9 @@
 run:
 	./script/build_and_run.sh
 test:
-	SDKROOT="$$(xcrun --sdk macosx --show-sdk-path)" swift test --package-path Packages/HypergateCore
+	./script/test.sh
 check:
-	git diff --check
+	./script/check.sh
 package-local:
 	./script/package-local.sh
 release:

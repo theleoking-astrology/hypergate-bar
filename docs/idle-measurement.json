@@ -1,0 +1,60 @@
+{
+  "measuredAt": "2026-09-08T21:39:13.039396+00:00",
+  "durationSeconds": 300.0979100000113,
+  "cpuSeconds": 0.0,
+  "averageOneCoreCPUPercent": 0.0,
+  "maximumObservedResidentBytes": 104071168,
+  "conditions": "App running with Dashboard, Settings, and menu popover closed; forecast completed; alerts and updater disabled",
+  "samples": [
+    {
+      "elapsedSeconds": 30.007733625010587,
+      "cpuSeconds": 0.0,
+      "residentBytes": 98238464
+    },
+    {
+      "elapsedSeconds": 60.01772533298936,
+      "cpuSeconds": 0.0,
+      "residentBytes": 98238464
+    },
+    {
+      "elapsedSeconds": 90.02848924999125,
+      "cpuSeconds": 0.0,
+      "residentBytes": 98238464
+    },
+    {
+      "elapsedSeconds": 120.0371536249877,
+      "cpuSeconds": 0.0,
+      "residentBytes": 97746944
+    },
+    {
+      "elapsedSeconds": 150.04534912499366,
+      "cpuSeconds": 0.0,
+      "residentBytes": 97697792
+    },
+    {
+      "elapsedSeconds": 180.05477099999553,
+      "cpuSeconds": 0.0,
+      "residentBytes": 97697792
+    },
+    {
+      "elapsedSeconds": 210.06529829098145,
+      "cpuSeconds": 0.0,
+      "residentBytes": 97697792
+    },
+    {
+      "elapsedSeconds": 240.0755375410081,
+      "cpuSeconds": 0.0,
+      "residentBytes": 97665024
+    },
+    {
+      "elapsedSeconds": 270.08412483299617,
+      "cpuSeconds": 0.0,
+      "residentBytes": 97632256
+    },
+    {
+      "elapsedSeconds": 300.09790212498046,
+      "cpuSeconds": 0.0,
+      "residentBytes": 97632256
+    }
+  ]
+}

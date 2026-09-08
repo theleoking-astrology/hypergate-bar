@@ -39,7 +39,31 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DA14B29E45DDD3BF2B9F48B1"
+               BuildableName = "HypergateBarTests.xctest"
+               BlueprintName = "HypergateBarTests"
+               ReferencedContainer = "container:HypergateBar.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5A0EE012E14FC5845A58EC67"
+               BuildableName = "HypergateBarUITests.xctest"
+               BlueprintName = "HypergateBarUITests"
+               ReferencedContainer = "container:HypergateBar.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"

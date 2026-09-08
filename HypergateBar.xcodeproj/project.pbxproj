@@ -7,45 +7,135 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00C45FF6BC9A8E040F4B1CE7 /* Sparkle-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 36A36F455593967A7450DF0F /* Sparkle-LICENSE.txt */; };
+		05D879CA69D8E8A3032A1793 /* QuietHoursSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917FA7B2BCDC6B2808692611 /* QuietHoursSettings.swift */; };
 		2E5A16B3D2F1B9E8D4925CF3 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB89F6EA13F08EF27FE5132B /* MenuBarView.swift */; };
-		5A1CF1FD034DA468C7075AD7 /* HypergateAstronomyEngine in Frameworks */ = {isa = PBXBuildFile; productRef = B0C561937AD5BF1E194DB454 /* HypergateAstronomyEngine */; };
+		301610EDE64CF64F02F5763F /* HypergateBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2BCC09D5FF38A8ED9BF05A /* HypergateBarUITests.swift */; };
+		5A1CF1FD034DA468C7075AD7 /* HypergateCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0DE46B7C3E3A67BAECB90767 /* HypergateCore */; };
 		5DF0B81D015491BFB8B6A6B7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9779A08BE47732282F185B7 /* SettingsView.swift */; };
+		71D1F7752D99EA1B0A0F857C /* MacNotificationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E915590BEBB77BA30A5A3D /* MacNotificationClient.swift */; };
+		71DDB52E14C8F0DD4585DA03 /* UpdateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A961CF136386187CCE1F3 /* UpdateService.swift */; };
+		83DBF09A57E7FC2DB453F692 /* HypergateAstronomyEngine in Frameworks */ = {isa = PBXBuildFile; productRef = B0C561937AD5BF1E194DB454 /* HypergateAstronomyEngine */; };
+		86D4A85275E551976382D32F /* EventExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089D22A810645E90C80C2427 /* EventExport.swift */; };
+		927819E36950236B0361D2DC /* ApplicationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E750A8D64BB8FCAE20EB944E /* ApplicationServiceTests.swift */; };
 		A21CC0D391CC6E13ED19EEA1 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B36B790113D2427F03957 /* DashboardView.swift */; };
+		A6D44C5E0B5B0B785C6246F9 /* HypergateBar-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 48F1EC006B7848B50006347E /* HypergateBar-LICENSE.txt */; };
+		A81D50F2E15866188124512F /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDA76D3CACB89D7B2922C04 /* IntroductionView.swift */; };
 		C0382FF14EE851889E3A02A1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D7998D86B4142ADC81AD1 /* AppState.swift */; };
-		C685C6D171CD4C68867A790B /* HypergateCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0DE46B7C3E3A67BAECB90767 /* HypergateCore */; };
+		C685C6D171CD4C68867A790B /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 234B0D5E0CBCD73E17B6870E /* Sparkle */; };
+		CC5CE559178D7611B09394AF /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569F01D9576CCF2168413035 /* EventDetailView.swift */; };
+		CDEFB550506E38E1A6CD9100 /* AstronomyEngine-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 870698D8F13012A06FCBF275 /* AstronomyEngine-LICENSE.txt */; };
 		DB5F59599722901DC8D7B283 /* HypergateBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F1D37BE59B45F3B2C0AE2 /* HypergateBarApp.swift */; };
+		FD3ECA35FE346A0D489953AE /* LoginItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F311128CF645ECF57E221 /* LoginItemService.swift */; };
+		FF8C3451289F63E852547312 /* HypergateCore in Frameworks */ = {isa = PBXBuildFile; productRef = 341F0113F7FE4931747819F4 /* HypergateCore */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1D68870C10BDFD3622BA89C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EE326EE8F69F66068A43093 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9F73ADB18AC86261E9CE449;
+			remoteInfo = HypergateBar;
+		};
+		E902240A0DD07D9EDE8B7043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EE326EE8F69F66068A43093 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9F73ADB18AC86261E9CE449;
+			remoteInfo = HypergateBar;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		039F311128CF645ECF57E221 /* LoginItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemService.swift; sourceTree = "<group>"; };
+		089D22A810645E90C80C2427 /* EventExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventExport.swift; sourceTree = "<group>"; };
+		36A36F455593967A7450DF0F /* Sparkle-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Sparkle-LICENSE.txt"; sourceTree = "<group>"; };
+		48F1EC006B7848B50006347E /* HypergateBar-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "HypergateBar-LICENSE.txt"; sourceTree = "<group>"; };
 		49BD3375F10D502F6408BD3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		569F01D9576CCF2168413035 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		579CAB3104E55E5B58544CD2 /* HypergateBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypergateBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59E915590BEBB77BA30A5A3D /* MacNotificationClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacNotificationClient.swift; sourceTree = "<group>"; };
+		5BFD163C63070D54F4389025 /* HypergateBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HypergateBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		870698D8F13012A06FCBF275 /* AstronomyEngine-LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "AstronomyEngine-LICENSE.txt"; sourceTree = "<group>"; };
+		917FA7B2BCDC6B2808692611 /* QuietHoursSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuietHoursSettings.swift; sourceTree = "<group>"; };
 		921D7998D86B4142ADC81AD1 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		9342542682B62424AC22048C /* HypergateBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypergateBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1F1D37BE59B45F3B2C0AE2 /* HypergateBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypergateBarApp.swift; sourceTree = "<group>"; };
+		9D2BCC09D5FF38A8ED9BF05A /* HypergateBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypergateBarUITests.swift; sourceTree = "<group>"; };
 		A62B36B790113D2427F03957 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		A71A961CF136386187CCE1F3 /* UpdateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateService.swift; sourceTree = "<group>"; };
+		ACDA76D3CACB89D7B2922C04 /* IntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
 		BB89F6EA13F08EF27FE5132B /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
 		C22651E4D21920728BAD0CD3 /* HypergateCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = HypergateCore; path = Packages/HypergateCore; sourceTree = SOURCE_ROOT; };
+		E750A8D64BB8FCAE20EB944E /* ApplicationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationServiceTests.swift; sourceTree = "<group>"; };
 		E9779A08BE47732282F185B7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5E767D988B5BBCED729EA573 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8C3451289F63E852547312 /* HypergateCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EF5910A2BAFBC71D78239D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C685C6D171CD4C68867A790B /* HypergateCore in Frameworks */,
-				5A1CF1FD034DA468C7075AD7 /* HypergateAstronomyEngine in Frameworks */,
+				C685C6D171CD4C68867A790B /* Sparkle in Frameworks */,
+				5A1CF1FD034DA468C7075AD7 /* HypergateCore in Frameworks */,
+				83DBF09A57E7FC2DB453F692 /* HypergateAstronomyEngine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		118ED6F7EC20A5CA2BB663CF /* LoginItem */ = {
+			isa = PBXGroup;
+			children = (
+				039F311128CF645ECF57E221 /* LoginItemService.swift */,
+			);
+			path = LoginItem;
+			sourceTree = "<group>";
+		};
+		1EE61DC0FCDB3181742273DE /* EventDetail */ = {
+			isa = PBXGroup;
+			children = (
+				569F01D9576CCF2168413035 /* EventDetailView.swift */,
+			);
+			path = EventDetail;
+			sourceTree = "<group>";
+		};
+		33F8CA1617F955199D8D9867 /* Updates */ = {
+			isa = PBXGroup;
+			children = (
+				A71A961CF136386187CCE1F3 /* UpdateService.swift */,
+			);
+			path = Updates;
+			sourceTree = "<group>";
+		};
+		34B84867D062F8F39D7C61B2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				118ED6F7EC20A5CA2BB663CF /* LoginItem */,
+				7C5D1E385547451ACE8ACE29 /* Notifications */,
+				69945840BA27BEFBABF43ADB /* Persistence */,
+				33F8CA1617F955199D8D9867 /* Updates */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		495A1623E2F08E423E21A41E /* App */ = {
 			isa = PBXGroup;
 			children = (
 				7128FF83DDC233D81005D453 /* App */,
 				FA02D4E0CB75B5E00079A6F3 /* Features */,
 				B421D9FB9009F51226500692 /* Resources */,
+				34B84867D062F8F39D7C61B2 /* Services */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -54,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				A62B36B790113D2427F03957 /* DashboardView.swift */,
+				ACDA76D3CACB89D7B2922C04 /* IntroductionView.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -61,9 +152,18 @@
 		55F01BC85A0D835B4BAECFCD /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				917FA7B2BCDC6B2808692611 /* QuietHoursSettings.swift */,
 				E9779A08BE47732282F185B7 /* SettingsView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		69945840BA27BEFBABF43ADB /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				089D22A810645E90C80C2427 /* EventExport.swift */,
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 		7128FF83DDC233D81005D453 /* App */ = {
@@ -75,6 +175,14 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		7C5D1E385547451ACE8ACE29 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				59E915590BEBB77BA30A5A3D /* MacNotificationClient.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
 		84D035FD51A102A813CBC943 /* MenuBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,10 +191,21 @@
 			path = MenuBar;
 			sourceTree = "<group>";
 		};
+		A07602A5C61AC7AB8D73C821 /* HypergateBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				E750A8D64BB8FCAE20EB944E /* ApplicationServiceTests.swift */,
+			);
+			name = HypergateBarTests;
+			path = Tests/HypergateBarTests;
+			sourceTree = "<group>";
+		};
 		AA7F02F7920B27720F66319A = {
 			isa = PBXGroup;
 			children = (
 				495A1623E2F08E423E21A41E /* App */,
+				A07602A5C61AC7AB8D73C821 /* HypergateBarTests */,
+				FE859EFD80A801A5DE2274CE /* HypergateBarUITests */,
 				E336C801831E81589041AEA7 /* Packages */,
 				BCC9E7936D9F53CC6EB8702E /* Products */,
 			);
@@ -95,7 +214,10 @@
 		B421D9FB9009F51226500692 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				870698D8F13012A06FCBF275 /* AstronomyEngine-LICENSE.txt */,
+				48F1EC006B7848B50006347E /* HypergateBar-LICENSE.txt */,
 				49BD3375F10D502F6408BD3F /* Info.plist */,
+				36A36F455593967A7450DF0F /* Sparkle-LICENSE.txt */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -104,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				9342542682B62424AC22048C /* HypergateBar.app */,
+				5BFD163C63070D54F4389025 /* HypergateBarTests.xctest */,
+				579CAB3104E55E5B58544CD2 /* HypergateBarUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,27 +244,49 @@
 			isa = PBXGroup;
 			children = (
 				4FD4480118A23957456F7B34 /* Dashboard */,
+				1EE61DC0FCDB3181742273DE /* EventDetail */,
 				84D035FD51A102A813CBC943 /* MenuBar */,
 				55F01BC85A0D835B4BAECFCD /* Settings */,
 			);
 			path = Features;
 			sourceTree = "<group>";
 		};
-		"TEMP_89DA535F-F3C5-4CDE-B9A7-D3C31F49978A" /* Services */ = {
+		FE859EFD80A801A5DE2274CE /* HypergateBarUITests */ = {
 			isa = PBXGroup;
 			children = (
+				9D2BCC09D5FF38A8ED9BF05A /* HypergateBarUITests.swift */,
 			);
-			path = Services;
+			name = HypergateBarUITests;
+			path = Tests/HypergateBarUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5A0EE012E14FC5845A58EC67 /* HypergateBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EE34A84906B01E80A54C36B /* Build configuration list for PBXNativeTarget "HypergateBarUITests" */;
+			buildPhases = (
+				6C2A97C108EB4033A2816998 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37F58502C59CD551248CD0F1 /* PBXTargetDependency */,
+			);
+			name = HypergateBarUITests;
+			packageProductDependencies = (
+			);
+			productName = HypergateBarUITests;
+			productReference = 579CAB3104E55E5B58544CD2 /* HypergateBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		B9F73ADB18AC86261E9CE449 /* HypergateBar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CB4009FF5DFBA27CA775851 /* Build configuration list for PBXNativeTarget "HypergateBar" */;
 			buildPhases = (
 				C72AF39EA4344B805B2A6C83 /* Sources */,
+				2B580C4187E5832FB63AAA20 /* Resources */,
 				8EF5910A2BAFBC71D78239D3 /* Frameworks */,
 			);
 			buildRules = (
@@ -149,12 +295,33 @@
 			);
 			name = HypergateBar;
 			packageProductDependencies = (
+				234B0D5E0CBCD73E17B6870E /* Sparkle */,
 				0DE46B7C3E3A67BAECB90767 /* HypergateCore */,
 				B0C561937AD5BF1E194DB454 /* HypergateAstronomyEngine */,
 			);
 			productName = HypergateBar;
 			productReference = 9342542682B62424AC22048C /* HypergateBar.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DA14B29E45DDD3BF2B9F48B1 /* HypergateBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62437C50C262C4207C764DA /* Build configuration list for PBXNativeTarget "HypergateBarTests" */;
+			buildPhases = (
+				73AE08E7861C99A6C6949784 /* Sources */,
+				5E767D988B5BBCED729EA573 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				817296D5941F323F3E5386A5 /* PBXTargetDependency */,
+			);
+			name = HypergateBarTests;
+			packageProductDependencies = (
+				341F0113F7FE4931747819F4 /* HypergateCore */,
+			);
+			productName = HypergateBarTests;
+			productReference = 5BFD163C63070D54F4389025 /* HypergateBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -165,7 +332,16 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					5A0EE012E14FC5845A58EC67 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+						TestTargetID = B9F73ADB18AC86261E9CE449;
+					};
 					B9F73ADB18AC86261E9CE449 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					DA14B29E45DDD3BF2B9F48B1 = {
 						DevelopmentTeam = "";
 						ProvisioningStyle = Manual;
 					};
@@ -181,6 +357,7 @@
 			mainGroup = AA7F02F7920B27720F66319A;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				D89196736D9055BFE201661D /* XCRemoteSwiftPackageReference "Sparkle" */,
 				7FD0F98A6C94617E904FDE13 /* XCLocalSwiftPackageReference "Packages/HypergateCore" */,
 			);
 			preferredProjectObjectVersion = 77;
@@ -189,24 +366,75 @@
 			projectRoot = "";
 			targets = (
 				B9F73ADB18AC86261E9CE449 /* HypergateBar */,
+				DA14B29E45DDD3BF2B9F48B1 /* HypergateBarTests */,
+				5A0EE012E14FC5845A58EC67 /* HypergateBarUITests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		2B580C4187E5832FB63AAA20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDEFB550506E38E1A6CD9100 /* AstronomyEngine-LICENSE.txt in Resources */,
+				A6D44C5E0B5B0B785C6246F9 /* HypergateBar-LICENSE.txt in Resources */,
+				00C45FF6BC9A8E040F4B1CE7 /* Sparkle-LICENSE.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		6C2A97C108EB4033A2816998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301610EDE64CF64F02F5763F /* HypergateBarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73AE08E7861C99A6C6949784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927819E36950236B0361D2DC /* ApplicationServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C72AF39EA4344B805B2A6C83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C0382FF14EE851889E3A02A1 /* AppState.swift in Sources */,
 				A21CC0D391CC6E13ED19EEA1 /* DashboardView.swift in Sources */,
+				CC5CE559178D7611B09394AF /* EventDetailView.swift in Sources */,
+				86D4A85275E551976382D32F /* EventExport.swift in Sources */,
 				DB5F59599722901DC8D7B283 /* HypergateBarApp.swift in Sources */,
+				A81D50F2E15866188124512F /* IntroductionView.swift in Sources */,
+				FD3ECA35FE346A0D489953AE /* LoginItemService.swift in Sources */,
+				71D1F7752D99EA1B0A0F857C /* MacNotificationClient.swift in Sources */,
 				2E5A16B3D2F1B9E8D4925CF3 /* MenuBarView.swift in Sources */,
+				05D879CA69D8E8A3032A1793 /* QuietHoursSettings.swift in Sources */,
 				5DF0B81D015491BFB8B6A6B7 /* SettingsView.swift in Sources */,
+				71DDB52E14C8F0DD4585DA03 /* UpdateService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37F58502C59CD551248CD0F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9F73ADB18AC86261E9CE449 /* HypergateBar */;
+			targetProxy = 1D68870C10BDFD3622BA89C7 /* PBXContainerItemProxy */;
+		};
+		817296D5941F323F3E5386A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9F73ADB18AC86261E9CE449 /* HypergateBar */;
+			targetProxy = E902240A0DD07D9EDE8B7043 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		553627138CBEC4527A2A5D46 /* Debug */ = {
@@ -276,6 +504,23 @@
 				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
+		};
+		6EC65270B4B0FED8582EA234 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.hypergate.HypergateBarUITests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = HypergateBar;
+			};
+			name = Release;
 		};
 		7239573567F3223E7D19BE1A /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -353,6 +598,40 @@
 			};
 			name = Release;
 		};
+		A106EBFF9CFB8DE3FA25AC68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.hypergate.HypergateBarTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HypergateBar.app/Contents/MacOS/HypergateBar";
+			};
+			name = Release;
+		};
+		AEDA75C0E14F38E9CF4055EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.hypergate.HypergateBarUITests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = HypergateBar;
+			};
+			name = Debug;
+		};
 		DE71BE3FFC21590E42FB575B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -368,6 +647,23 @@
 			};
 			name = Debug;
 		};
+		FA51B1754891EE91E4EDAD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.hypergate.HypergateBarTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HypergateBar.app/Contents/MacOS/HypergateBar";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -376,6 +672,15 @@
 			buildConfigurations = (
 				553627138CBEC4527A2A5D46 /* Debug */,
 				84A5E8E7F98D1288DFE49E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4EE34A84906B01E80A54C36B /* Build configuration list for PBXNativeTarget "HypergateBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEDA75C0E14F38E9CF4055EE /* Debug */,
+				6EC65270B4B0FED8582EA234 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -389,6 +694,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		A62437C50C262C4207C764DA /* Build configuration list for PBXNativeTarget "HypergateBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA51B1754891EE91E4EDAD12 /* Debug */,
+				A106EBFF9CFB8DE3FA25AC68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
@@ -398,8 +712,28 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		D89196736D9055BFE201661D /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = revision;
+				revision = ac2def288cbff5cfc7df3ffef6abdf45b72bcb0a;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		0DE46B7C3E3A67BAECB90767 /* HypergateCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HypergateCore;
+		};
+		234B0D5E0CBCD73E17B6870E /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D89196736D9055BFE201661D /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+		341F0113F7FE4931747819F4 /* HypergateCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = HypergateCore;
 		};

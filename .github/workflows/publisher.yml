@@ -1,0 +1,74 @@
+name: Protected publisher
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing reviewed source tag (vMAJOR.MINOR.PATCH)
+        required: true
+        type: string
+      commit:
+        description: Exact reviewed 40-character source commit
+        required: true
+        type: string
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: hypergatebar-publisher
+  cancel-in-progress: false
+jobs:
+  protection:
+    runs-on: macos-26
+    steps:
+      - name: Require an existing environment with independent reviewer approval
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ inputs.tag }}
+          COMMIT: ${{ inputs.commit }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, subprocess
+          assert re.fullmatch(r'v\d+\.\d+\.\d+', os.environ['TAG'])
+          assert re.fullmatch(r'[0-9a-f]{40}', os.environ['COMMIT'])
+          output = subprocess.check_output(['gh', 'api', 'repos/' + os.environ['GITHUB_REPOSITORY'] + '/environments/publisher'])
+          environment = json.loads(output)
+          assert any(rule.get('type') == 'required_reviewers' and rule.get('reviewers') and rule.get('prevent_self_review') for rule in environment.get('protection_rules', [])), 'Configure publisher required reviewers and prevent self-review before publishing.'
+          PY
+  publish:
+    needs: protection
+    runs-on: macos-26
+    environment: publisher
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_26.6.app/Contents/Developer
+      HYPERGATE_RELEASE_TAG: ${{ inputs.tag }}
+      HYPERGATE_RELEASE_SHA: ${{ inputs.commit }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ inputs.tag }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Validate reviewed source and all release gates before importing keys
+        run: |
+          test "$(git rev-parse HEAD)" = "$HYPERGATE_RELEASE_SHA"
+          make check
+          make test
+      - name: Sign, notarize, verify, publish assets, then update the feed
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HYPERGATE_PROTECTED_PUBLISHER: verified
+          DEVELOPER_ID_APPLICATION: ${{ vars.DEVELOPER_ID_APPLICATION }}
+          APPLE_TEAM_ID: ${{ vars.APPLE_TEAM_ID }}
+          NOTARY_KEYCHAIN_PROFILE: HypergateBarPublisher
+          SPARKLE_PUBLIC_ED_KEY: ${{ vars.SPARKLE_PUBLIC_ED_KEY }}
+          SPARKLE_FEED_URL: ${{ vars.SPARKLE_FEED_URL }}
+          APPLE_CERTIFICATE_P12_BASE64: ${{ secrets.APPLE_CERTIFICATE_P12_BASE64 }}
+          APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+          NOTARY_API_KEY_BASE64: ${{ secrets.NOTARY_API_KEY_BASE64 }}
+          NOTARY_KEY_ID: ${{ secrets.NOTARY_KEY_ID }}
+          NOTARY_ISSUER_ID: ${{ secrets.NOTARY_ISSUER_ID }}
+          SPARKLE_PRIVATE_ED_KEY: ${{ secrets.SPARKLE_PRIVATE_ED_KEY }}
+        run: python3 script/publisher.py

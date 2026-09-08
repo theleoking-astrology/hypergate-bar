@@ -1,0 +1,29 @@
+{
+  "build" : "Swift release optimization",
+  "measuredAt" : "2026-09-08T20:55:59.814Z",
+  "operations" : [
+    {
+      "operation" : "ten positions",
+      "seconds" : "0.0016574583132751286"
+    },
+    {
+      "events" : "3",
+      "operation" : "Today cold",
+      "seconds" : "0.03687633335357532"
+    },
+    {
+      "events" : "324",
+      "operation" : "90 days cold",
+      "seconds" : "3.7560262916376814"
+    },
+    {
+      "events" : "324",
+      "operation" : "90 days warm",
+      "seconds" : "0.4738784999935888"
+    }
+  ],
+  "os" : "Version 27.0 (Build 26A5425a)",
+  "peakResidentBytes" : 19546112,
+  "physicalMemoryBytes" : 51539607552,
+  "providerRevision" : "865d3da7d8112bbc7911238052c6af4aaf877181"
+}

@@ -1,39 +1,58 @@
 # HypergateBar
 
-**Hypergate AI Open Source** — a native macOS menu-bar astrology utility.
+**Hypergate AI Open Source** — native macOS menu-bar astrology, calculated offline.
 
-Unreleased, under active implementation. Calculates the sky offline using the
-MIT-licensed C Astronomy Engine. No account, backend, AI model, paid API, telemetry,
-birth information, or location permission is required.
+Unreleased source implementation for macOS 14+, initially validated on Apple Silicon/macOS 27. No account, backend, AI model, paid API, telemetry, birth information, or location permission is required. No public binary release is available yet.
 
-## Local development
+![Running native Dashboard](docs/screenshots/dashboard-today-dark.png)
 
-Requires macOS 14+, Xcode with Swift 6, and Apple's command-line tools. The Xcode
-project and shared scheme are committed; project regeneration additionally uses
-XcodeGen 2.45.4. Apple Silicon is the initial runtime validation target.
+## Features
+
+- Real tropical geocentric positions and motion for all ten bodies, Moon sign/phase and next ingress.
+- Ingresses, squares, oppositions, stations, optional conjunctions/minor aspects, and a progressive cached 90-day forecast.
+- Native Today, Upcoming and Planets dashboards, event details with UTC, filters, display zones, Settings and save-dialog JSON export.
+- Local reminders with editable leads, type/body filters, quiet hours, pause and sound. Alerts and launch at login start off.
+- Foundation-only calculation package, replaceable provider adapter, CLI and versioned JSON.
+
+Independent tests compared 1,040 positions and 88 representative events against JPL Horizons. All frozen gates passed for those samples. Input range: 2000-01-01 through 2050-12-31 UTC. See [accuracy and limits](docs/accuracy.md); this is sampled validation, not exhaustive event-topology proof.
+
+## Build and run
+
+Requires Xcode with Swift 6, macOS SDK/command-line tools, Python 3 and Git. The committed Xcode project builds without XcodeGen or an Apple Developer account. Initial resolution downloads pinned Sparkle 2.9.6; core operation and routine tests are offline afterward. XcodeGen 2.45.4 is needed only for project regeneration.
 
 ```sh
+git clone https://github.com/theleoking-astrology/hypergate-bar.git
+cd hypergate-bar
+make check
 make test
 make run
+make package-local
 ```
 
-`./script/build_and_run.sh --dashboard` launches the companion window immediately.
-Closing Dashboard leaves the menu-bar app running. Use Quit HypergateBar to exit.
-Reopen the app from Finder to recover access after removing its menu-bar item.
+`script/build_and_run.sh --dashboard` opens Dashboard immediately. Builds stage exact source bytes under a project-specific `~/Library/Caches/HypergateBar` directory to avoid FileProvider signing metadata; `HYPERGATE_BUILD_PATH` overrides it. The Codex Run action uses the same script.
 
-## Status
+Closing Dashboard leaves the menu-bar application running. Quit exits. Removing the menu item may cause macOS to terminate a menu-bar-only application; reopen HypergateBar from Finder to restore access. Command-comma opens Settings.
 
-The initial offline slice calculates all ten planetary positions and the next
-Moon ingress. Full event forecasting, reminders, export and release infrastructure
-are being implemented. See docs/implementation-checklist.md for acceptance status.
-The calculation window is currently restricted to 2000–2050; independent accuracy
-validation is not yet complete. Root precision is not astronomical accuracy.
+Local packaging creates an **ad-hoc signed development ZIP**, checksums, notices and source manifest under `dist/`. It is not notarized. `make release` fails closed without publisher configuration and protected execution: [release runbook](docs/release-runbook.md).
 
-Local ad-hoc builds are development artifacts, not notarized public releases.
-No public binary release exists yet.
+## CLI and reuse
+
+```sh
+swift run --package-path Packages/HypergateCore hypergate sky --at 2026-09-08T19:00:00Z --json
+swift run --package-path Packages/HypergateCore hypergate events --from 2026-09-08T00:00:00Z --to 2026-10-08T00:00:00Z --types ingress,square,opposition,station --json
+swift run --package-path Examples/Consumer
+```
+
+These are reproducible usage examples, not claims about the present sky. Dates need explicit offsets; queries are limited to 90 elapsed days. Errors use stderr and nonzero status. See [developer reuse/schema](docs/developer-reuse.md).
+
+## Evidence and limitations
+
+See [validation](docs/validation.md), [performance](docs/performance.md), [checklist](docs/implementation-checklist.md), [conventions](docs/calculations.md), [architecture](docs/architecture.md) and [privacy/network behavior](docs/privacy.md).
+
+The local run passed 25 package tests and two application-service tests. The macOS UI runner could not enable automation on this host; real windows, export, settings and lifecycle were inspected manually. OS scheduling readback reached 44 routine reminders, but visible test delivery and notification-click navigation remain unverified. Focus, sleep, permission and display-sharing policy can suppress delivery. Queue coverage can end before the forecast; replenishment requires the app to run again.
+
+Updates stay disabled without verified publisher configuration. No trusted binary, notarization or updater-delivery claim is made.
 
 ## License
 
-Original code: MIT. See LICENSE and THIRD_PARTY_NOTICES.md. HypergateBar is an
-independent open-source utility. Forks should use their own identity and must not
-imply official endorsement; the MIT software license remains unrestricted.
+Original code: MIT. Preserve [dependency notices](THIRD_PARTY_NOTICES.md). HypergateBar and Hypergate AI Open Source identify this project; forks should use their own identity and must not imply endorsement. Attribution does not restrict the MIT software license. See [CONTRIBUTING](CONTRIBUTING.md), [SECURITY](SECURITY.md) and [CODE_OF_CONDUCT](CODE_OF_CONDUCT.md).

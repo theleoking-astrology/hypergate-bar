@@ -13,6 +13,9 @@ settings:
     ENABLE_HARDENED_RUNTIME: NO
     GENERATE_INFOPLIST_FILE: NO
 packages:
+  Sparkle:
+    url: https://github.com/sparkle-project/Sparkle
+    revision: ac2def288cbff5cfc7df3ffef6abdf45b72bcb0a
   HypergateCore:
     path: Packages/HypergateCore
 targets:
@@ -33,10 +36,34 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: ai.hypergate.HypergateBar
     dependencies:
+      - package: Sparkle
+        product: Sparkle
       - package: HypergateCore
         product: HypergateCore
       - package: HypergateCore
         product: HypergateAstronomyEngine
+  HypergateBarTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: [Tests/HypergateBarTests]
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: ai.hypergate.HypergateBarTests
+    dependencies:
+      - target: HypergateBar
+      - package: HypergateCore
+        product: HypergateCore
+  HypergateBarUITests:
+    type: bundle.ui-testing
+    platform: macOS
+    sources: [Tests/HypergateBarUITests]
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: ai.hypergate.HypergateBarUITests
+    dependencies:
+      - target: HypergateBar
 schemes:
   HypergateBar:
     build:
@@ -44,3 +71,7 @@ schemes:
         HypergateBar: all
     run:
       config: Debug
+    test:
+      targets:
+        - HypergateBarTests
+        - HypergateBarUITests

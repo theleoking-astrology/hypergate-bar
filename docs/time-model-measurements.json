@@ -1,0 +1,626 @@
+[
+  {
+    "at" : "2000-01-01T00:00:00.000Z",
+    "differenceSeconds" : -0.3373775683866853,
+    "providerTTMinusUTCSeconds" : 63.8466251947122,
+    "referenceTTMinusUTCSeconds" : 64.18400276309889
+  },
+  {
+    "at" : "2000-07-01T00:00:00.000Z",
+    "differenceSeconds" : -0.18310365509385917,
+    "providerTTMinusUTCSeconds" : 64.00090008974075,
+    "referenceTTMinusUTCSeconds" : 64.18400374483461
+  },
+  {
+    "at" : "2001-01-01T00:00:00.000Z",
+    "differenceSeconds" : -0.055888035609555686,
+    "providerTTMinusUTCSeconds" : 64.12811661502928,
+    "referenceTTMinusUTCSeconds" : 64.18400465063884
+  },
+  {
+    "at" : "2001-07-01T00:00:00.000Z",
+    "differenceSeconds" : 0.043802939674961294,
+    "providerTTMinusUTCSeconds" : 64.22780486500415,
+    "referenceTTMinusUTCSeconds" : 64.18400192532918
+  },
+  {
+    "at" : "2002-01-01T00:00:00.000Z",
+    "differenceSeconds" : 0.12323555779444462,
+    "providerTTMinusUTCSeconds" : 64.30723859957652,
+    "referenceTTMinusUTCSeconds" : 64.18400304178208
+  },
+  {
+    "at" : "2002-07-01T00:00:00.000Z",
+    "differenceSeconds" : 0.1849291716372221,
+    "providerTTMinusUTCSeconds" : 64.36893145655631,
+    "referenceTTMinusUTCSeconds" : 64.18400228491909
+  },
+  {
+    "at" : "2003-01-01T00:00:00.000Z",
+    "differenceSeconds" : 0.23748407302652197,
+    "providerTTMinusUTCSeconds" : 64.42148318019463,
+    "referenceTTMinusUTCSeconds" : 64.1839991071681
+  },
+  {
+    "at" : "2003-07-01T00:00:00.000Z",
+    "differenceSeconds" : 0.2869881676064523,
+    "providerTTMinusUTCSeconds" : 64.47098893331713,
+    "referenceTTMinusUTCSeconds" : 64.18400076571068
+  },
+  {
+    "at" : "2004-01-01T00:00:00.000Z",
+    "differenceSeconds" : 0.34458744183625356,
+    "providerTTMinusUTCSeconds" : 64.52858873672085,
+    "referenceTTMinusUTCSeconds" : 64.1840012948846
+  },
+  {
+    "at" : "2004-07-01T00:00:00.000Z",
+    "differenceSeconds" : 0.41975299022612944,
+    "providerTTMinusUTCSeconds" : 64.60375362366904,
+    "referenceTTMinusUTCSeconds" : 64.1840006334429
+  },
+  {
+    "at" : "2005-01-01T00:00:00.000Z",
+    "differenceSeconds" : 0.5269989311556458,
+    "providerTTMinusUTCSeconds" : 64.71100082126213,
+    "referenceTTMinusUTCSeconds" : 64.18400189010649
+  },
+  {
+    "at" : "2005-07-01T00:00:00.000Z",
+    "differenceSeconds" : 0.6609055432064395,
+    "providerTTMinusUTCSeconds" : 64.84490750008263,
+    "referenceTTMinusUTCSeconds" : 64.18400195687619
+  },
+  {
+    "at" : "2006-01-01T00:00:00.000Z",
+    "differenceSeconds" : -0.1446399585785798,
+    "providerTTMinusUTCSeconds" : 65.03936245426303,
+    "referenceTTMinusUTCSeconds" : 65.18400241284161
+  },
+  {
+    "at" : "2006-07-01T00:00:00.000Z",
+    "differenceSeconds" : 0.049413225323476695,
+    "providerTTMinusUTCSeconds" : 65.23341480206,
+    "referenceTTMinusUTCSeconds" : 65.18400157673652
+  },
+  {
+    "at" : "2007-01-01T00:00:00.000Z",
+    "differenceSeconds" : 0.24949613992309594,
+    "providerTTMinusUTCSeconds" : 65.43349720886908,
+    "referenceTTMinusUTCSeconds" : 65.18400106894599
+  },
+  {
+    "at" : "2007-07-01T00:00:00.000Z",
+    "differenceSeconds" : 0.44908262668745635,
+    "providerTTMinusUTCSeconds" : 65.63308526674518,
+    "referenceTTMinusUTCSeconds" : 65.18400264005773
+  },
+  {
+    "at" : "2008-01-01T00:00:00.000Z",
+    "differenceSeconds" : 0.6547948090965434,
+    "providerTTMinusUTCSeconds" : 65.83879516547313,
+    "referenceTTMinusUTCSeconds" : 65.18400035637659
+  },
+  {
+    "at" : "2008-07-01T00:00:00.000Z",
+    "differenceSeconds" : 0.861058369315387,
+    "providerTTMinusUTCSeconds" : 66.04505984141724,
+    "referenceTTMinusUTCSeconds" : 65.18400147210185
+  },
+  {
+    "at" : "2009-01-01T00:00:00.000Z",
+    "differenceSeconds" : 0.0724099163407459,
+    "providerTTMinusUTCSeconds" : 66.25641263381112,
+    "referenceTTMinusUTCSeconds" : 66.18400271747038
+  },
+  {
+    "at" : "2009-07-01T00:00:00.000Z",
+    "differenceSeconds" : 0.2830879108136344,
+    "providerTTMinusUTCSeconds" : 66.46708727785153,
+    "referenceTTMinusUTCSeconds" : 66.1839993670379
+  },
+  {
+    "at" : "2010-01-01T00:00:00.000Z",
+    "differenceSeconds" : 0.5000663855251872,
+    "providerTTMinusUTCSeconds" : 66.6840675228741,
+    "referenceTTMinusUTCSeconds" : 66.18400113734891
+  },
+  {
+    "at" : "2010-07-01T00:00:00.000Z",
+    "differenceSeconds" : 0.7162766932042359,
+    "providerTTMinusUTCSeconds" : 66.90027791628381,
+    "referenceTTMinusUTCSeconds" : 66.18400122307958
+  },
+  {
+    "at" : "2011-01-01T00:00:00.000Z",
+    "differenceSeconds" : 0.9388852210073679,
+    "providerTTMinusUTCSeconds" : 67.12288561393507,
+    "referenceTTMinusUTCSeconds" : 66.1840003929277
+  },
+  {
+    "at" : "2011-07-01T00:00:00.000Z",
+    "differenceSeconds" : 1.160629393579086,
+    "providerTTMinusUTCSeconds" : 67.34463171742391,
+    "referenceTTMinusUTCSeconds" : 66.18400232384482
+  },
+  {
+    "at" : "2012-01-01T00:00:00.000Z",
+    "differenceSeconds" : 1.3888632250575625,
+    "providerTTMinusUTCSeconds" : 67.57286690699402,
+    "referenceTTMinusUTCSeconds" : 66.18400368193646
+  },
+  {
+    "at" : "2012-07-01T00:00:00.000Z",
+    "differenceSeconds" : 0.6174088837176015,
+    "providerTTMinusUTCSeconds" : 67.8014120174339,
+    "referenceTTMinusUTCSeconds" : 67.1840031337163
+  },
+  {
+    "at" : "2013-01-01T00:00:00.000Z",
+    "differenceSeconds" : 0.851285978678419,
+    "providerTTMinusUTCSeconds" : 68.03529006137978,
+    "referenceTTMinusUTCSeconds" : 67.18400408270136
+  },
+  {
+    "at" : "2013-07-01T00:00:00.000Z",
+    "differenceSeconds" : 1.0841183280140854,
+    "providerTTMinusUTCSeconds" : 68.26812275103293,
+    "referenceTTMinusUTCSeconds" : 67.18400442301885
+  },
+  {
+    "at" : "2014-01-01T00:00:00.000Z",
+    "differenceSeconds" : 1.323623947424906,
+    "providerTTMinusUTCSeconds" : 68.5076282476075,
+    "referenceTTMinusUTCSeconds" : 67.1840043001826
+  },
+  {
+    "at" : "2014-07-01T00:00:00.000Z",
+    "differenceSeconds" : 1.5619937937235449,
+    "providerTTMinusUTCSeconds" : 68.74599668662995,
+    "referenceTTMinusUTCSeconds" : 67.1840028929064
+  },
+  {
+    "at" : "2015-01-01T00:00:00.000Z",
+    "differenceSeconds" : 1.8071280232042994,
+    "providerTTMinusUTCSeconds" : 68.9911296358332,
+    "referenceTTMinusUTCSeconds" : 67.1840016126289
+  },
+  {
+    "at" : "2015-07-01T00:00:00.000Z",
+    "differenceSeconds" : 1.0510306804344935,
+    "providerTTMinusUTCSeconds" : 69.23503382422496,
+    "referenceTTMinusUTCSeconds" : 68.18400314379046
+  },
+  {
+    "at" : "2016-01-01T00:00:00.000Z",
+    "differenceSeconds" : 1.301792400919581,
+    "providerTTMinusUTCSeconds" : 69.4857942260569,
+    "referenceTTMinusUTCSeconds" : 68.18400182513732
+  },
+  {
+    "at" : "2016-07-01T00:00:00.000Z",
+    "differenceSeconds" : 1.552616977649322,
+    "providerTTMinusUTCSeconds" : 69.73661984957289,
+    "referenceTTMinusUTCSeconds" : 68.18400287192357
+  },
+  {
+    "at" : "2017-01-01T00:00:00.000Z",
+    "differenceSeconds" : 0.8090186642813109,
+    "providerTTMinusUTCSeconds" : 69.99302318436094,
+    "referenceTTMinusUTCSeconds" : 69.18400452007963
+  },
+  {
+    "at" : "2017-07-01T00:00:00.000Z",
+    "differenceSeconds" : 1.0640113027175744,
+    "providerTTMinusUTCSeconds" : 70.24801388033666,
+    "referenceTTMinusUTCSeconds" : 69.18400257761908
+  },
+  {
+    "at" : "2018-01-01T00:00:00.000Z",
+    "differenceSeconds" : 1.3260416340061596,
+    "providerTTMinusUTCSeconds" : 70.51004466775339,
+    "referenceTTMinusUTCSeconds" : 69.18400303374723
+  },
+  {
+    "at" : "2018-07-01T00:00:00.000Z",
+    "differenceSeconds" : 1.5865678321262635,
+    "providerTTMinusUTCSeconds" : 70.77057111309841,
+    "referenceTTMinusUTCSeconds" : 69.18400328097215
+  },
+  {
+    "at" : "2019-01-01T00:00:00.000Z",
+    "differenceSeconds" : 1.8542291763282748,
+    "providerTTMinusUTCSeconds" : 71.03822943172418,
+    "referenceTTMinusUTCSeconds" : 69.1840002553959
+  },
+  {
+    "at" : "2019-07-01T00:00:00.000Z",
+    "differenceSeconds" : 2.1202897174934208,
+    "providerTTMinusUTCSeconds" : 71.30429154785816,
+    "referenceTTMinusUTCSeconds" : 69.18400183036474
+  },
+  {
+    "at" : "2020-01-01T00:00:00.000Z",
+    "differenceSeconds" : 2.3935759826230054,
+    "providerTTMinusUTCSeconds" : 71.5775773191126,
+    "referenceTTMinusUTCSeconds" : 69.1840013364896
+  },
+  {
+    "at" : "2020-07-01T00:00:00.000Z",
+    "differenceSeconds" : 2.6666835480074838,
+    "providerTTMinusUTCSeconds" : 71.85068329854403,
+    "referenceTTMinusUTCSeconds" : 69.18399975053654
+  },
+  {
+    "at" : "2021-01-01T00:00:00.000Z",
+    "differenceSeconds" : 2.9456102118580816,
+    "providerTTMinusUTCSeconds" : 72.12961192417424,
+    "referenceTTMinusUTCSeconds" : 69.18400171231616
+  },
+  {
+    "at" : "2021-07-01T00:00:00.000Z",
+    "differenceSeconds" : 3.222759669649051,
+    "providerTTMinusUTCSeconds" : 72.40676070505287,
+    "referenceTTMinusUTCSeconds" : 69.18400103540382
+  },
+  {
+    "at" : "2022-01-01T00:00:00.000Z",
+    "differenceSeconds" : 3.507314513953162,
+    "providerTTMinusUTCSeconds" : 72.69131678331178,
+    "referenceTTMinusUTCSeconds" : 69.18400226935861
+  },
+  {
+    "at" : "2022-07-01T00:00:00.000Z",
+    "differenceSeconds" : 3.790000067641415,
+    "providerTTMinusUTCSeconds" : 72.97400131355971,
+    "referenceTTMinusUTCSeconds" : 69.1840012459183
+  },
+  {
+    "at" : "2023-01-01T00:00:00.000Z",
+    "differenceSeconds" : 4.080183273845321,
+    "providerTTMinusUTCSeconds" : 73.2641848444473,
+    "referenceTTMinusUTCSeconds" : 69.18400157060198
+  },
+  {
+    "at" : "2023-07-01T00:00:00.000Z",
+    "differenceSeconds" : 4.368401772884951,
+    "providerTTMinusUTCSeconds" : 73.55240496690385,
+    "referenceTTMinusUTCSeconds" : 69.1840031940189
+  },
+  {
+    "at" : "2024-01-01T00:00:00.000Z",
+    "differenceSeconds" : 4.6642127142913665,
+    "providerTTMinusUTCSeconds" : 73.84821595042013,
+    "referenceTTMinusUTCSeconds" : 69.18400323612876
+  },
+  {
+    "at" : "2024-07-01T00:00:00.000Z",
+    "differenceSeconds" : 4.959598870009145,
+    "providerTTMinusUTCSeconds" : 74.14360244292766,
+    "referenceTTMinusUTCSeconds" : 69.18400357291851
+  },
+  {
+    "at" : "2025-01-01T00:00:00.000Z",
+    "differenceSeconds" : 5.261050975116291,
+    "providerTTMinusUTCSeconds" : 74.44505643798038,
+    "referenceTTMinusUTCSeconds" : 69.18400546286409
+  },
+  {
+    "at" : "2025-07-01T00:00:00.000Z",
+    "differenceSeconds" : 5.560361262459736,
+    "providerTTMinusUTCSeconds" : 74.74436314660124,
+    "referenceTTMinusUTCSeconds" : 69.18400188414151
+  },
+  {
+    "at" : "2026-01-01T00:00:00.000Z",
+    "differenceSeconds" : 5.867442579039647,
+    "providerTTMinusUTCSeconds" : 75.05144459428266,
+    "referenceTTMinusUTCSeconds" : 69.18400201524301
+  },
+  {
+    "at" : "2026-07-01T00:00:00.000Z",
+    "differenceSeconds" : 6.172284639384699,
+    "providerTTMinusUTCSeconds" : 75.35628697369248,
+    "referenceTTMinusUTCSeconds" : 69.18400233430778
+  },
+  {
+    "at" : "2026-09-08T19:00:00.000Z",
+    "differenceSeconds" : 6.290560222927809,
+    "providerTTMinusUTCSeconds" : 75.47456437605433,
+    "referenceTTMinusUTCSeconds" : 69.18400415312652
+  },
+  {
+    "at" : "2027-01-01T00:00:00.000Z",
+    "differenceSeconds" : 6.484996226656079,
+    "providerTTMinusUTCSeconds" : 75.66899587400258,
+    "referenceTTMinusUTCSeconds" : 69.1839996473465
+  },
+  {
+    "at" : "2027-07-01T00:00:00.000Z",
+    "differenceSeconds" : 6.795372828325938,
+    "providerTTMinusUTCSeconds" : 75.97937408136204,
+    "referenceTTMinusUTCSeconds" : 69.1840012530361
+  },
+  {
+    "at" : "2028-01-01T00:00:00.000Z",
+    "differenceSeconds" : 7.1137084202376,
+    "providerTTMinusUTCSeconds" : 76.29771043430082,
+    "referenceTTMinusUTCSeconds" : 69.18400201406322
+  },
+  {
+    "at" : "2028-07-01T00:00:00.000Z",
+    "differenceSeconds" : 7.4313758496569875,
+    "providerTTMinusUTCSeconds" : 76.61537728272378,
+    "referenceTTMinusUTCSeconds" : 69.1840014330668
+  },
+  {
+    "at" : "2029-01-01T00:00:00.000Z",
+    "differenceSeconds" : 7.755352884062674,
+    "providerTTMinusUTCSeconds" : 76.93935649003834,
+    "referenceTTMinusUTCSeconds" : 69.18400360597566
+  },
+  {
+    "at" : "2029-07-01T00:00:00.000Z",
+    "differenceSeconds" : 8.076817174773936,
+    "providerTTMinusUTCSeconds" : 77.26082128356211,
+    "referenceTTMinusUTCSeconds" : 69.18400410878817
+  },
+  {
+    "at" : "2030-01-01T00:00:00.000Z",
+    "differenceSeconds" : 8.406424110388457,
+    "providerTTMinusUTCSeconds" : 77.59042794350535,
+    "referenceTTMinusUTCSeconds" : 69.18400383311689
+  },
+  {
+    "at" : "2030-07-01T00:00:00.000Z",
+    "differenceSeconds" : 8.733424532583683,
+    "providerTTMinusUTCSeconds" : 77.91742840781808,
+    "referenceTTMinusUTCSeconds" : 69.1840038752344
+  },
+  {
+    "at" : "2031-01-01T00:00:00.000Z",
+    "differenceSeconds" : 9.068659987342059,
+    "providerTTMinusUTCSeconds" : 78.25266267755069,
+    "referenceTTMinusUTCSeconds" : 69.18400269020863
+  },
+  {
+    "at" : "2031-07-01T00:00:00.000Z",
+    "differenceSeconds" : 9.40119437618938,
+    "providerTTMinusUTCSeconds" : 78.58519881265238,
+    "referenceTTMinusUTCSeconds" : 69.184004436463
+  },
+  {
+    "at" : "2032-01-01T00:00:00.000Z",
+    "differenceSeconds" : 9.74205797282768,
+    "providerTTMinusUTCSeconds" : 78.92606037785299,
+    "referenceTTMinusUTCSeconds" : 69.18400240502531
+  },
+  {
+    "at" : "2032-07-01T00:00:00.000Z",
+    "differenceSeconds" : 10.082005310115903,
+    "providerTTMinusUTCSeconds" : 79.26600773935206,
+    "referenceTTMinusUTCSeconds" : 69.18400242923616
+  },
+  {
+    "at" : "2033-01-01T00:00:00.000Z",
+    "differenceSeconds" : 10.428509027414336,
+    "providerTTMinusUTCSeconds" : 79.61251231608912,
+    "referenceTTMinusUTCSeconds" : 69.18400328867479
+  },
+  {
+    "at" : "2033-07-01T00:00:00.000Z",
+    "differenceSeconds" : 10.772134468030245,
+    "providerTTMinusUTCSeconds" : 79.95613503735512,
+    "referenceTTMinusUTCSeconds" : 69.18400056932488
+  },
+  {
+    "at" : "2034-01-01T00:00:00.000Z",
+    "differenceSeconds" : 11.124264324294842,
+    "providerTTMinusUTCSeconds" : 80.30826706672087,
+    "referenceTTMinusUTCSeconds" : 69.18400274242603
+  },
+  {
+    "at" : "2034-07-01T00:00:00.000Z",
+    "differenceSeconds" : 11.47342304188031,
+    "providerTTMinusUTCSeconds" : 80.65742561593652,
+    "referenceTTMinusUTCSeconds" : 69.18400257405621
+  },
+  {
+    "at" : "2035-01-01T00:00:00.000Z",
+    "differenceSeconds" : 11.831184000404193,
+    "providerTTMinusUTCSeconds" : 81.01518494077027,
+    "referenceTTMinusUTCSeconds" : 69.18400094036608
+  },
+  {
+    "at" : "2035-07-01T00:00:00.000Z",
+    "differenceSeconds" : 12.185877365682629,
+    "providerTTMinusUTCSeconds" : 81.36987931793556,
+    "referenceTTMinusUTCSeconds" : 69.18400195225293
+  },
+  {
+    "at" : "2036-01-01T00:00:00.000Z",
+    "differenceSeconds" : 12.549262703430173,
+    "providerTTMinusUTCSeconds" : 81.733266095398,
+    "referenceTTMinusUTCSeconds" : 69.18400339196782
+  },
+  {
+    "at" : "2036-07-01T00:00:00.000Z",
+    "differenceSeconds" : 12.911491674619484,
+    "providerTTMinusUTCSeconds" : 82.09549396997318,
+    "referenceTTMinusUTCSeconds" : 69.1840022953537
+  },
+  {
+    "at" : "2037-01-01T00:00:00.000Z",
+    "differenceSeconds" : 13.280520430811748,
+    "providerTTMinusUTCSeconds" : 82.46452375897206,
+    "referenceTTMinusUTCSeconds" : 69.18400332816032
+  },
+  {
+    "at" : "2037-07-01T00:00:00.000Z",
+    "differenceSeconds" : 13.646301960788932,
+    "providerTTMinusUTCSeconds" : 82.83030456514098,
+    "referenceTTMinusUTCSeconds" : 69.18400260435205
+  },
+  {
+    "at" : "2038-01-01T00:00:00.000Z",
+    "differenceSeconds" : 14.02095951708452,
+    "providerTTMinusUTCSeconds" : 83.20496180676855,
+    "referenceTTMinusUTCSeconds" : 69.18400228968403
+  },
+  {
+    "at" : "2038-07-01T00:00:00.000Z",
+    "differenceSeconds" : 14.392276701205631,
+    "providerTTMinusUTCSeconds" : 83.57627844088711,
+    "referenceTTMinusUTCSeconds" : 69.18400173968148
+  },
+  {
+    "at" : "2039-01-01T00:00:00.000Z",
+    "differenceSeconds" : 14.772561778103622,
+    "providerTTMinusUTCSeconds" : 83.95656313514337,
+    "referenceTTMinusUTCSeconds" : 69.18400135703975
+  },
+  {
+    "at" : "2039-07-01T00:00:00.000Z",
+    "differenceSeconds" : 15.149412782489236,
+    "providerTTMinusUTCSeconds" : 84.3334152828902,
+    "referenceTTMinusUTCSeconds" : 69.18400250040096
+  },
+  {
+    "at" : "2040-01-01T00:00:00.000Z",
+    "differenceSeconds" : 15.535326448402571,
+    "providerTTMinusUTCSeconds" : 84.71932758693583,
+    "referenceTTMinusUTCSeconds" : 69.18400113853326
+  },
+  {
+    "at" : "2040-07-01T00:00:00.000Z",
+    "differenceSeconds" : 15.919833577150726,
+    "providerTTMinusUTCSeconds" : 85.10383581742644,
+    "referenceTTMinusUTCSeconds" : 69.18400224027572
+  },
+  {
+    "at" : "2041-01-01T00:00:00.000Z",
+    "differenceSeconds" : 16.311386421781705,
+    "providerTTMinusUTCSeconds" : 85.49539081868716,
+    "referenceTTMinusUTCSeconds" : 69.18400439690545
+  },
+  {
+    "at" : "2041-07-01T00:00:00.000Z",
+    "differenceSeconds" : 16.69932742424389,
+    "providerTTMinusUTCSeconds" : 85.88332970975898,
+    "referenceTTMinusUTCSeconds" : 69.18400228551509
+  },
+  {
+    "at" : "2042-01-01T00:00:00.000Z",
+    "differenceSeconds" : 17.096510109845724,
+    "providerTTMinusUTCSeconds" : 86.28051232080907,
+    "referenceTTMinusUTCSeconds" : 69.18400221096334
+  },
+  {
+    "at" : "2042-07-01T00:00:00.000Z",
+    "differenceSeconds" : 17.489983852434875,
+    "providerTTMinusUTCSeconds" : 86.67398688266985,
+    "referenceTTMinusUTCSeconds" : 69.18400303023498
+  },
+  {
+    "at" : "2043-01-01T00:00:00.000Z",
+    "differenceSeconds" : 17.89279595540964,
+    "providerTTMinusUTCSeconds" : 87.07679678918794,
+    "referenceTTMinusUTCSeconds" : 69.1840008337783
+  },
+  {
+    "at" : "2043-07-01T00:00:00.000Z",
+    "differenceSeconds" : 18.2918057101288,
+    "providerTTMinusUTCSeconds" : 87.47580717899837,
+    "referenceTTMinusUTCSeconds" : 69.18400146886957
+  },
+  {
+    "at" : "2044-01-01T00:00:00.000Z",
+    "differenceSeconds" : 18.700243024775077,
+    "providerTTMinusUTCSeconds" : 87.88424453814514,
+    "referenceTTMinusUTCSeconds" : 69.18400151337006
+  },
+  {
+    "at" : "2044-07-01T00:00:00.000Z",
+    "differenceSeconds" : 19.107032613218067,
+    "providerTTMinusUTCSeconds" : 88.29103328171186,
+    "referenceTTMinusUTCSeconds" : 69.1840006684938
+  },
+  {
+    "at" : "2045-01-01T00:00:00.000Z",
+    "differenceSeconds" : 19.521111106684828,
+    "providerTTMinusUTCSeconds" : 88.7051134952344,
+    "referenceTTMinusUTCSeconds" : 69.18400238854957
+  },
+  {
+    "at" : "2045-07-01T00:00:00.000Z",
+    "differenceSeconds" : 19.931209219729496,
+    "providerTTMinusUTCSeconds" : 89.11521047120914,
+    "referenceTTMinusUTCSeconds" : 69.18400125147964
+  },
+  {
+    "at" : "2046-01-01T00:00:00.000Z",
+    "differenceSeconds" : 20.350916044279927,
+    "providerTTMinusUTCSeconds" : 89.53491845168173,
+    "referenceTTMinusUTCSeconds" : 69.1840024074018
+  },
+  {
+    "at" : "2046-07-01T00:00:00.000Z",
+    "differenceSeconds" : 20.766549313035995,
+    "providerTTMinusUTCSeconds" : 89.95055094128475,
+    "referenceTTMinusUTCSeconds" : 69.18400162824875
+  },
+  {
+    "at" : "2047-01-01T00:00:00.000Z",
+    "differenceSeconds" : 21.191882858341046,
+    "providerTTMinusUTCSeconds" : 90.37588621722534,
+    "referenceTTMinusUTCSeconds" : 69.1840033588843
+  },
+  {
+    "at" : "2047-07-01T00:00:00.000Z",
+    "differenceSeconds" : 21.613050273562692,
+    "providerTTMinusUTCSeconds" : 90.797054534778,
+    "referenceTTMinusUTCSeconds" : 69.1840042612153
+  },
+  {
+    "at" : "2048-01-01T00:00:00.000Z",
+    "differenceSeconds" : 22.044013993736087,
+    "providerTTMinusUTCSeconds" : 91.22801742050797,
+    "referenceTTMinusUTCSeconds" : 69.18400342677188
+  },
+  {
+    "at" : "2048-07-01T00:00:00.000Z",
+    "differenceSeconds" : 22.473082574350826,
+    "providerTTMinusUTCSeconds" : 91.65708651999012,
+    "referenceTTMinusUTCSeconds" : 69.18400394563929
+  },
+  {
+    "at" : "2049-01-01T00:00:00.000Z",
+    "differenceSeconds" : 22.909686587047446,
+    "providerTTMinusUTCSeconds" : 92.09369210293517,
+    "referenceTTMinusUTCSeconds" : 69.18400551588772
+  },
+  {
+    "at" : "2049-07-01T00:00:00.000Z",
+    "differenceSeconds" : 23.34194464876998,
+    "providerTTMinusUTCSeconds" : 92.52594716381282,
+    "referenceTTMinusUTCSeconds" : 69.18400251504283
+  },
+  {
+    "at" : "2050-01-01T00:00:00.000Z",
+    "differenceSeconds" : 23.784177853931098,
+    "providerTTMinusUTCSeconds" : 92.96818004222587,
+    "referenceTTMinusUTCSeconds" : 69.18400218829477
+  },
+  {
+    "at" : "2050-07-01T00:00:00.000Z",
+    "differenceSeconds" : 24.749224573404845,
+    "providerTTMinusUTCSeconds" : 93.93322648247704,
+    "referenceTTMinusUTCSeconds" : 69.1840019090722
+  },
+  {
+    "at" : "2050-12-31T23:59:00.000Z",
+    "differenceSeconds" : 25.776595254339398,
+    "providerTTMinusUTCSeconds" : 94.96059467783198,
+    "referenceTTMinusUTCSeconds" : 69.18399942349258
+  }
+]

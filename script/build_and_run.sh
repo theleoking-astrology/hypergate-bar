@@ -2,10 +2,7 @@
 set -euo pipefail
 source "$(dirname "$0")/common.sh"
 if pgrep -x HypergateBar >/dev/null; then pkill -x HypergateBar; fi
-xcodebuild -project HypergateBar.xcodeproj -scheme HypergateBar -configuration Debug \
+BUILD_SOURCE="$(python3 script/stage-build-source.py "$BUILD_PATH")"
+xcodebuild -project "$BUILD_SOURCE/HypergateBar.xcodeproj" -scheme HypergateBar -configuration Debug \
   -sdk macosx -destination 'platform=macOS,arch=arm64' -derivedDataPath "$BUILD_PATH/DerivedData" build
-if [[ "${1:-}" == "--dashboard" ]]; then
-  /usr/bin/open "$APP_PATH" --args --dashboard
-else
-  /usr/bin/open "$APP_PATH"
-fi
+/usr/bin/open "$APP_PATH" --args "$@"
