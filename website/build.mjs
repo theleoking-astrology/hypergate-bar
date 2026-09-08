@@ -39,7 +39,7 @@ const files = {
   'docs/screenshots/dashboard-final.png': 'assets/dashboard.png',
   'docs/screenshots/dashboard-upcoming.png': 'assets/upcoming.png',
   'docs/screenshots/dashboard-planets-light.png': 'assets/planets.png',
-  'docs/screenshots/menu-popover-hosted-macos26.png': 'assets/menu-popover.png',
+  'docs/screenshots/menu-popover-updates-macos26.png': 'assets/menu-popover.png',
 };
 for (const [source, target] of Object.entries(files)) await copyFile(resolve(root, source), resolve(output, target));
 await writeFile(resolve(output, 'changelog.json'), JSON.stringify({ entries }, null, 2) + '\n');
