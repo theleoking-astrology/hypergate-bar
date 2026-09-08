@@ -30,7 +30,20 @@ import XCTest
     add(attachment)
     app.windows["HypergateBar"].buttons[XCUIIdentifierCloseWindow].click()
     XCTAssertNotEqual(app.state, .notRunning)
-    app.terminate()
-    XCTAssertEqual(app.state, .notRunning)
+    let status = app.statusItems.firstMatch
+    XCTAssertTrue(status.waitForExistence(timeout: 10))
+    status.click()
+    XCTAssertTrue(app.buttons["Open Dashboard"].waitForExistence(timeout: 10))
+    XCTAssertTrue(app.staticTexts["NEXT MOON INGRESS"].exists)
+    let popover = XCTAttachment(screenshot: app.screenshot())
+    popover.name = "Actual MenuBarExtra popover"
+    popover.lifetime = .keepAlways
+    add(popover)
+    app.buttons["Open Dashboard"].click()
+    XCTAssertEqual(app.windows.matching(identifier: "HypergateBar").count, 1)
+    app.windows["HypergateBar"].buttons[XCUIIdentifierCloseWindow].click()
+    status.click()
+    app.buttons["Quit HypergateBar"].click()
+    XCTAssertTrue(app.wait(for: .notRunning, timeout: 10))
   }
 }
