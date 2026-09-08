@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E5A16B3D2F1B9E8D4925CF3 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB89F6EA13F08EF27FE5132B /* MenuBarView.swift */; };
+		5A1CF1FD034DA468C7075AD7 /* HypergateAstronomyEngine in Frameworks */ = {isa = PBXBuildFile; productRef = B0C561937AD5BF1E194DB454 /* HypergateAstronomyEngine */; };
+		5DF0B81D015491BFB8B6A6B7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9779A08BE47732282F185B7 /* SettingsView.swift */; };
+		A21CC0D391CC6E13ED19EEA1 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B36B790113D2427F03957 /* DashboardView.swift */; };
+		C0382FF14EE851889E3A02A1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921D7998D86B4142ADC81AD1 /* AppState.swift */; };
+		C685C6D171CD4C68867A790B /* HypergateCore in Frameworks */ = {isa = PBXBuildFile; productRef = 0DE46B7C3E3A67BAECB90767 /* HypergateCore */; };
+		DB5F59599722901DC8D7B283 /* HypergateBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F1D37BE59B45F3B2C0AE2 /* HypergateBarApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		49BD3375F10D502F6408BD3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		921D7998D86B4142ADC81AD1 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		9342542682B62424AC22048C /* HypergateBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HypergateBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D1F1D37BE59B45F3B2C0AE2 /* HypergateBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HypergateBarApp.swift; sourceTree = "<group>"; };
+		A62B36B790113D2427F03957 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		BB89F6EA13F08EF27FE5132B /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		C22651E4D21920728BAD0CD3 /* HypergateCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = HypergateCore; path = Packages/HypergateCore; sourceTree = SOURCE_ROOT; };
+		E9779A08BE47732282F185B7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8EF5910A2BAFBC71D78239D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C685C6D171CD4C68867A790B /* HypergateCore in Frameworks */,
+				5A1CF1FD034DA468C7075AD7 /* HypergateAstronomyEngine in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		495A1623E2F08E423E21A41E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7128FF83DDC233D81005D453 /* App */,
+				FA02D4E0CB75B5E00079A6F3 /* Features */,
+				B421D9FB9009F51226500692 /* Resources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4FD4480118A23957456F7B34 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A62B36B790113D2427F03957 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		55F01BC85A0D835B4BAECFCD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E9779A08BE47732282F185B7 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		7128FF83DDC233D81005D453 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				921D7998D86B4142ADC81AD1 /* AppState.swift */,
+				9D1F1D37BE59B45F3B2C0AE2 /* HypergateBarApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		84D035FD51A102A813CBC943 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				BB89F6EA13F08EF27FE5132B /* MenuBarView.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		AA7F02F7920B27720F66319A = {
+			isa = PBXGroup;
+			children = (
+				495A1623E2F08E423E21A41E /* App */,
+				E336C801831E81589041AEA7 /* Packages */,
+				BCC9E7936D9F53CC6EB8702E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B421D9FB9009F51226500692 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49BD3375F10D502F6408BD3F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BCC9E7936D9F53CC6EB8702E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9342542682B62424AC22048C /* HypergateBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E336C801831E81589041AEA7 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				C22651E4D21920728BAD0CD3 /* HypergateCore */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		FA02D4E0CB75B5E00079A6F3 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				4FD4480118A23957456F7B34 /* Dashboard */,
+				84D035FD51A102A813CBC943 /* MenuBar */,
+				55F01BC85A0D835B4BAECFCD /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		"TEMP_89DA535F-F3C5-4CDE-B9A7-D3C31F49978A" /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9F73ADB18AC86261E9CE449 /* HypergateBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CB4009FF5DFBA27CA775851 /* Build configuration list for PBXNativeTarget "HypergateBar" */;
+			buildPhases = (
+				C72AF39EA4344B805B2A6C83 /* Sources */,
+				8EF5910A2BAFBC71D78239D3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HypergateBar;
+			packageProductDependencies = (
+				0DE46B7C3E3A67BAECB90767 /* HypergateCore */,
+				B0C561937AD5BF1E194DB454 /* HypergateAstronomyEngine */,
+			);
+			productName = HypergateBar;
+			productReference = 9342542682B62424AC22048C /* HypergateBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EE326EE8F69F66068A43093 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					B9F73ADB18AC86261E9CE449 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 31638B5D097F50297E2AA194 /* Build configuration list for PBXProject "HypergateBar" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = AA7F02F7920B27720F66319A;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7FD0F98A6C94617E904FDE13 /* XCLocalSwiftPackageReference "Packages/HypergateCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BCC9E7936D9F53CC6EB8702E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9F73ADB18AC86261E9CE449 /* HypergateBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C72AF39EA4344B805B2A6C83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0382FF14EE851889E3A02A1 /* AppState.swift in Sources */,
+				A21CC0D391CC6E13ED19EEA1 /* DashboardView.swift in Sources */,
+				DB5F59599722901DC8D7B283 /* HypergateBarApp.swift in Sources */,
+				2E5A16B3D2F1B9E8D4925CF3 /* MenuBarView.swift in Sources */,
+				5DF0B81D015491BFB8B6A6B7 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		553627138CBEC4527A2A5D46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		7239573567F3223E7D19BE1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = App/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.hypergate.HypergateBar;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		84A5E8E7F98D1288DFE49E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		DE71BE3FFC21590E42FB575B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = App/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.hypergate.HypergateBar;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31638B5D097F50297E2AA194 /* Build configuration list for PBXProject "HypergateBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				553627138CBEC4527A2A5D46 /* Debug */,
+				84A5E8E7F98D1288DFE49E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7CB4009FF5DFBA27CA775851 /* Build configuration list for PBXNativeTarget "HypergateBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE71BE3FFC21590E42FB575B /* Debug */,
+				7239573567F3223E7D19BE1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		7FD0F98A6C94617E904FDE13 /* XCLocalSwiftPackageReference "Packages/HypergateCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/HypergateCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0DE46B7C3E3A67BAECB90767 /* HypergateCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HypergateCore;
+		};
+		B0C561937AD5BF1E194DB454 /* HypergateAstronomyEngine */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HypergateAstronomyEngine;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9EE326EE8F69F66068A43093 /* Project object */;
+}

@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/cosinekitty/astronomy",
+  "revision": "865d3da7d8112bbc7911238052c6af4aaf877181",
+  "files": [
+    {
+      "upstream": "source/c/astronomy.c",
+      "path": "Sources/CAstronomyEngine/astronomy.c",
+      "sha256": "3ef243a3ee4c10fc05a5cb460d753e4e17eb2f57dad7892690e12599088717ac"
+    },
+    {
+      "upstream": "source/c/astronomy.h",
+      "path": "Sources/CAstronomyEngine/include/astronomy.h",
+      "sha256": "0c130854ee55b466dee98928ad72e3c5092bc862d37a2bba036c5568c811edbe"
+    },
+    {
+      "upstream": "LICENSE",
+      "path": "Sources/CAstronomyEngine/LICENSE",
+      "sha256": "a76df666a7db8a06f599d08e07c3ff74c4b250b50b49c43353af2bd5bb34604e"
+    }
+  ]
+}
