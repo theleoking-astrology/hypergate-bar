@@ -13,14 +13,14 @@ import XCTest
     let planets = app.radioButtons["Planets"]
     XCTAssertTrue(planets.waitForExistence(timeout: 10))
     planets.click()
-    XCTAssertTrue(app.tables.firstMatch.waitForExistence(timeout: 10))
+    XCTAssertTrue(
+      app.descendants(matching: .any)["planet-table"].firstMatch.waitForExistence(timeout: 10))
     XCTAssertTrue(app.staticTexts["Sun"].exists)
     app.radioButtons["Upcoming"].click()
     XCTAssertTrue(
-      app.menuButtons.matching(NSPredicate(format: "label BEGINSWITH 'Event types'")).firstMatch
-        .exists)
+      app.descendants(matching: .any)["event-type-filter"].firstMatch.waitForExistence(timeout: 10))
     app.buttons["Export JSON"].click()
-    let cancel = app.buttons["Cancel"]
+    let cancel = app.dialogs["save-panel"].buttons["CancelButton"]
     XCTAssertTrue(cancel.waitForExistence(timeout: 5))
     cancel.click()
     XCTAssertTrue(app.windows["HypergateBar"].exists)

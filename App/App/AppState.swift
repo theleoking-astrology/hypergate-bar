@@ -39,6 +39,8 @@ final class AppState {
   @ObservationIgnored private var persistenceTask: Task<Void, Never>?
   private var preferencesGeneration = 0
   private var generation = 0
+  private var forecastGeneration = 0
+  private var forecastStart: Date?
   private var launchReceiptWritten = false
   init(
     provider: any EphemerisProvider = AstronomyEngineProvider(),
@@ -83,8 +85,22 @@ final class AppState {
     defer { if token == generation { calculating = false } }
     do {
       let now = clock.now()
+      let requestedStart = Calendar(identifier: .gregorian).startOfDay(for: now)
+      if forecastStart != requestedStart {
+        forecastGeneration += 1
+        forecastTask?.cancel()
+        forecastTask = nil
+        forecastStart = requestedStart
+      }
       let positions = try await provider.positions(at: now, bodies: Body.allCases)
       guard token == generation, !Task.isCancelled else { return }
+      guard positions.count == Body.allCases.count,
+        Set(positions.map(\.body)).count == positions.count,
+        positions.allSatisfy({
+          $0.longitude.isFinite && (0..<360).contains($0.longitude)
+            && $0.latitude.isFinite && abs($0.latitude) <= 90 && $0.velocity.isFinite
+        })
+      else { throw CoreError.provider("Provider returned an incomplete or invalid sky sample.") }
       sky = SkySnapshot(
         provider: provider.metadata, at: now, calculatedAt: clock.now(), positions: positions)
       if !launchReceiptWritten,
@@ -134,8 +150,9 @@ final class AppState {
   }
   private func extendForecast(from now: Date) {
     guard forecastTask == nil else { return }
+    let token = forecastGeneration
     forecastTask = Task {
-      defer { forecastTask = nil }
+      defer { if token == forecastGeneration { forecastTask = nil } }
       do {
         let start = Calendar(identifier: .gregorian).startOfDay(for: now)
         var allEvents: [AstroEvent] = []
@@ -148,6 +165,7 @@ final class AppState {
           forecastProgress = "Calculating \(days)-day forecast…"
           let segment = try await engine.events(
             EventQuery(from: left, to: right, types: EventKind.allCases))
+          guard token == forecastGeneration, !Task.isCancelled else { return }
           allEvents += segment.events
           let reconciled = EventIdentity.reconcile(allEvents, previous: forecast?.events ?? [])
           let query = try EventQuery(from: start, to: right, types: EventKind.allCases)
@@ -158,14 +176,19 @@ final class AppState {
           if forecast == nil || right >= (forecast?.coverageEnd ?? right) {
             forecast = document
             try await storage.saveEvents(document)
+            guard token == forecastGeneration, !Task.isCancelled else { return }
           }
           await reconcileReminders()
           left = right
         }
         forecastProgress = "Forecast calculated"
       } catch is CancellationError {
-        forecastProgress = "Forecast paused; calculated coverage remains available"
-      } catch { forecastProgress = "Incomplete forecast: \(error)" }
+        if token == forecastGeneration {
+          forecastProgress = "Forecast paused; calculated coverage remains available"
+        }
+      } catch {
+        if token == forecastGeneration { forecastProgress = "Incomplete forecast: \(error)" }
+      }
     }
   }
   private func scheduleBoundary() {

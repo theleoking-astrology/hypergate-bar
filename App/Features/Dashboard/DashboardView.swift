@@ -33,6 +33,7 @@ struct DashboardView: View {
       if let sky = state.sky {
         if section == "Planets" {
           PlanetTable(positions: sky.positions, state: state)
+            .accessibilityIdentifier("planet-table")
         } else {
           ScrollView {
             VStack(alignment: .leading, spacing: 18) {
@@ -154,6 +155,7 @@ struct EventFilters: View {
               }))
         }
       }
+      .accessibilityIdentifier("event-type-filter")
       Menu("Bodies (\(state.displayBodies.count))") {
         ForEach(HypergateCore.Body.allCases) { body in
           Toggle(

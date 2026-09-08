@@ -4,6 +4,17 @@ import XCTest
 @testable import HypergateBar
 
 @MainActor final class ApplicationServiceTests: XCTestCase {
+  func testInvalidSkyNeverBecomesAvailable() async {
+    let directory = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
+    let metadata = AppState.shared.provider.metadata
+    let state = AppState(
+      provider: MissingSkyProvider(metadata: metadata),
+      storage: JSONStateStore(directory: directory)
+    )
+    await state.refresh()
+    XCTAssertNil(state.sky)
+    XCTAssertNotNil(state.error)
+  }
   func testUnconfiguredUpdaterRemainsDisabled() {
     let service = UpdateService(bundle: Bundle(for: Self.self))
     XCTAssertFalse(service.enabled)
@@ -19,4 +30,9 @@ import XCTest
     XCTAssertEqual(state.selectedEvent?.instant, instant)
     XCTAssertEqual(state.zone.identifier, "Asia/Tokyo")
   }
+}
+
+private struct MissingSkyProvider: EphemerisProvider {
+  let metadata: ProviderMetadata
+  func positions(at date: Date, bodies: [Body]) async throws -> [Position] { [] }
 }
