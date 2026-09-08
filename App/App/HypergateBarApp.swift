@@ -11,9 +11,10 @@ struct HypergateBarApp: App {
     MenuBarExtra {
       MenuBarView(state: state)
     } label: {
-      Text(menuLabel)
+      Text(menuLabel + (state.updates.updateAvailable ? " ↑" : ""))
         .accessibilityLabel(
-          state.moon.map { "Moon in \($0.sign.name)" } ?? "HypergateBar calculating")
+          (state.moon.map { "Moon in \($0.sign.name)" } ?? "HypergateBar calculating")
+            + (state.updates.updateAvailable ? ", update available" : ""))
     }.menuBarExtraStyle(.window)
     Settings { SettingsView(state: state) }
   }

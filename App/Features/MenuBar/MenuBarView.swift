@@ -44,12 +44,32 @@ struct MenuBarView: View {
         Text("Unavailable / stale: \(error)").font(.caption).foregroundStyle(.red)
       }
       Divider()
-      Button("Open Dashboard", action: AppDelegate.openDashboard).keyboardShortcut("d")
-      SettingsLink { Text("Settings…") }.keyboardShortcut(",")
-      Button(state.preferences.alerts.paused ? "Resume Alerts" : "Pause Alerts") {
-        state.setAlerts(.paused(!state.preferences.alerts.paused))
+      HStack {
+        Button("Open Dashboard", action: AppDelegate.openDashboard).keyboardShortcut("d")
+        SettingsLink { Text("Settings…") }.keyboardShortcut(",")
       }
-      Button("Refresh") { Task { await state.refresh() } }
+      HStack {
+        Button(state.preferences.alerts.paused ? "Resume Alerts" : "Pause Alerts") {
+          state.setAlerts(.paused(!state.preferences.alerts.paused))
+        }
+        Button("Refresh") { Task { await state.refresh() } }
+      }
+      VStack(alignment: .leading, spacing: 5) {
+        Button(action: state.updates.check) {
+          Label(
+            state.updates.actionTitle,
+            systemImage: state.updates.updateAvailable
+              ? "arrow.down.circle.fill" : "arrow.clockwise")
+        }
+        .disabled(!state.updates.canCheck)
+        .accessibilityIdentifier("menu-update-action")
+        if state.updates.updateAvailable {
+          Text("A new version is available.").font(.caption).foregroundStyle(.purple)
+        } else if !state.updates.enabled {
+          Text("Updates are not configured for this development build.")
+            .font(.caption2).foregroundStyle(.secondary)
+        }
+      }
       Divider()
       Button("Quit HypergateBar") { NSApplication.shared.terminate(nil) }.keyboardShortcut("q")
     }

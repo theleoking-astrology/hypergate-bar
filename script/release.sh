@@ -41,7 +41,8 @@ import os, pathlib, plistlib
 path = pathlib.Path(os.environ['PUBLISH_APP']) / 'Contents/Info.plist'
 with path.open('rb') as file: info = plistlib.load(file)
 info.update(SUFeedURL=os.environ['SPARKLE_FEED_URL'], SUPublicEDKey=os.environ['SPARKLE_PUBLIC_ED_KEY'],
-            HypergatePublisherVerified=True, SUEnableAutomaticChecks=False, SUAutomaticallyUpdate=False,
+            HypergatePublisherVerified=True, SUEnableAutomaticChecks=True, SUAutomaticallyUpdate=False,
+            SUScheduledCheckInterval=86400, SUAllowsAutomaticUpdates=False, SUEnableSystemProfiling=False,
             SUShowReleaseNotes=False)
 with path.open('wb') as file: plistlib.dump(info, file)
 PY

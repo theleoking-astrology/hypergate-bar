@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0c10">
+  <title>HypergateBar — The sky, one click away.</title>
+  <meta name="description" content="A free, open-source macOS menu-bar astrology utility. Real planetary positions, upcoming transits and local reminders. Calculated on your Mac, without an account.">
+  <meta property="og:title" content="HypergateBar — The sky, one click away.">
+  <meta property="og:description" content="Native macOS astrology. Offline calculations. Open source. Meet your sky in the menu bar.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/dashboard.png">
+  <link rel="icon" href="/assets/hypergate-icon.png" type="image/png">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container nav">
+    <a class="brand" href="/" aria-label="HypergateBar home"><img src="/assets/hypergate-icon.png" width="38" height="38" alt=""><span>Hypergate<span class="brand-bar">Bar</span></span></a>
+    <nav aria-label="Main navigation"><a href="#inside">The app</a><a href="/changelog/">Changelog</a><a class="source-link" href="https://github.com/theleoking-astrology/hypergate-bar">GitHub <span aria-hidden="true">↗</span></a></nav>
+    <a class="button small" href="#install">Get started <span aria-hidden="true">↗</span></a>
+  </div></header>
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-moon" aria-hidden="true">☾</span> A SMALL UTILITY FOR A BIG SKY</p>
+        <h1 id="hero-title">The sky,<br><span>one click away.</span></h1>
+        <p class="hero-description">Your Moon sign, planetary shifts, and the moments ahead. Right in your Mac’s menu bar.</p>
+        <div class="actions"><a class="button primary" href="https://github.com/theleoking-astrology/hypergate-bar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1-4-2-6-2m12 5v-4a3.5 3.5 0 0 0-1-3c3-.4 6-1.5 6-6a4.7 4.7 0 0 0-1.3-3.3A4.3 4.3 0 0 0 18.6 2S17.5 1.6 15 3a13.5 13.5 0 0 0-6 0C6.5 1.6 5.4 2 5.4 2a4.3 4.3 0 0 0-.1 3.7A4.7 4.7 0 0 0 4 9c0 4.5 3 5.6 6 6a3.5 3.5 0 0 0-1 3v4"/></svg>Get the source</a><a class="text-link" href="#inside">Take a closer look <span aria-hidden="true">↓</span></a></div>
+        <p class="compatibility">Free & open source <span>·</span> macOS 14+ <span>·</span> Apple Silicon</p>
+        <div class="source-status"><span class="status-dot" aria-hidden="true"></span><p><a href="/changelog/">{{LATEST_TITLE}}</a><br><span>Build from source today. Signed app download coming soon.</span></p></div>
+      </div>
+      <figure class="hero-visual">
+        <div class="menu-caption"><span class="hairline"></span> A little presence. A wider perspective.</div>
+        <div class="menu-capture"><img src="/assets/menu-popover.png" width="1024" height="768" alt="Actual HypergateBar menu popover: Moon in Leo, next Moon ingress, retrograde planets, upcoming events, and app controls."></div>
+        <figcaption>Actual macOS app · September 8, 2026 sample</figcaption>
+      </figure>
+    </section>
+    <section class="principles container" aria-label="Built for your Mac"><div><span aria-hidden="true">⌘</span><p><strong>Native by nature.</strong><br>SwiftUI. Fast. At home on your Mac.</p></div><div><span aria-hidden="true">◌</span><p><strong>Your Mac does the math.</strong><br>Real calculations. Fully offline.</p></div><div><span aria-hidden="true">↗</span><p><strong>Open all the way down.</strong><br>Readable code. No account required.</p></div></section>
+    <section class="app-section container" id="inside" aria-labelledby="inside-title">
+      <div class="section-heading"><div><p class="eyebrow">A GLANCE. OR THE WHOLE PICTURE.</p><h2 id="inside-title">Small in the menu bar.<br>Room to look ahead.</h2></div><p>Open the Dashboard when you want more context. Explore exact event times, planetary motion, and a forecast that stretches up to 90 days.</p></div>
+      <div class="preview-controls" aria-label="Choose an app screenshot"><button type="button" class="preview-tab active" aria-pressed="true" data-image="/assets/dashboard.png" data-description="Today Dashboard with Moon sign, phase and the next selected events.">Today</button><button type="button" class="preview-tab" aria-pressed="false" data-image="/assets/upcoming.png" data-description="Upcoming Dashboard with event-type and body filters and calculated transit times.">Upcoming</button><button type="button" class="preview-tab" aria-pressed="false" data-image="/assets/planets.png" data-description="Planets Dashboard showing the longitude, sign, motion and daily speed of all ten bodies.">Planets</button><span>Real app screenshots <span aria-hidden="true">↘</span></span></div>
+      <figure class="dashboard-preview"><button type="button" class="screenshot-button" data-zoom aria-label="Enlarge the app screenshot"><img id="app-preview" src="/assets/dashboard.png" width="920" height="682" loading="lazy" alt="Today Dashboard with Moon sign, phase and the next selected events."></button><figcaption id="preview-description">Today Dashboard with Moon sign, phase and the next selected events.</figcaption></figure>
+      <div class="feature-notes"><div><span class="feature-number">01 / THE SKY</span><h3>Ten bodies. One clear view.</h3><p>See tropical, geocentric positions from the Sun to Pluto, with signs, degrees, and direct or retrograde motion.</p></div><div><span class="feature-number">02 / WHAT’S NEXT</span><h3>Follow the turning points.</h3><p>Sign ingresses, squares, oppositions, and exact stations. Optional conjunctions and minor aspects when you want them.</p></div><div><span class="feature-number">03 / YOUR RHYTHM</span><h3>Reminders on your terms.</h3><p>Choose bodies, event types, and lead times. Set quiet hours or pause it all. Alerts stay off until you enable them.</p></div></div>
+    </section>
+    <section class="open-section" id="open-source"><div class="container open-layout"><div><p class="eyebrow">HYPERGATE AI OPEN SOURCE</p><h2>Good tools should<br>be yours to explore.</h2><p>No subscription. No sign-in. No AI-generated sky. HypergateBar calculates astronomical events on your Mac with Astronomy Engine, and gives you the source to see how it works.</p><div class="inline-links"><a href="https://github.com/theleoking-astrology/hypergate-bar/tree/main/Packages/HypergateCore">Explore the Swift package ↗</a><a href="https://github.com/theleoking-astrology/hypergate-bar/blob/main/docs/accuracy.md">Read the accuracy notes ↗</a></div></div><div class="terminal"><div class="terminal-bar"><span aria-hidden="true">● ● ●</span><span>hypergate · CLI</span></div><pre><code><span class="code-comment"># The same engine. Your own workflow.</span>
+<span class="code-prompt">$</span> hypergate sky \
+    --at 2026-09-08T19:00:00Z \
+    --json
+
+<span class="code-comment"># Plan the month ahead.</span>
+<span class="code-prompt">$</span> hypergate events \
+    --from 2026-09-08T00:00:00Z \
+    --to 2026-10-08T00:00:00Z \
+    --types ingress,square,station \
+    --json</code></pre><p>Example commands · versioned JSON · reusable Swift library</p></div></div></section>
+    <section class="container updates-section" aria-labelledby="updates-title"><div><p class="eyebrow">BUILT IN THE OPEN</p><h2 id="updates-title">A clear record<br>of what’s changing.</h2><a class="text-link" href="/changelog/">Read the changelog <span aria-hidden="true">↗</span></a></div><article class="latest-update"><p class="eyebrow">LATEST DEVELOPMENT UPDATE</p><h3>{{LATEST_TITLE}}</h3><ul>{{LATEST_ITEMS}}</ul><a href="/changelog/">All changes <span aria-hidden="true">→</span></a></article></section>
+    <section class="container install-section" id="install" aria-labelledby="install-title"><div><p class="eyebrow">MAKE A LITTLE ROOM IN YOUR MENU BAR</p><h2 id="install-title">Start with the source.</h2><p>HypergateBar is in its first open-source preview. Build it locally with Xcode and Swift 6. The signed macOS download will be linked here when it’s ready.</p><p class="requirements">Requires macOS 14+, Xcode with Swift 6, Python 3, and Git. Initial dependency setup needs internet; the app’s core works offline.</p><a class="text-link" href="https://github.com/theleoking-astrology/hypergate-bar#build-and-run">Full build instructions ↗</a></div><div class="install-code"><div><span>Terminal</span><button type="button" data-copy="install-command">Copy commands</button></div><pre><code id="install-command">git clone https://github.com/theleoking-astrology/hypergate-bar.git
+cd hypergate-bar
+make run</code></pre><p data-copy-status aria-live="polite"></p></div></section>
+    <section class="container faq-section" aria-labelledby="faq-title"><h2 id="faq-title">A few useful details.</h2><div><details><summary>Does HypergateBar need an account or internet?</summary><p>No account is needed. The native app calculates the sky locally. Building from source downloads its dependencies once. Future optional updates require a connection; the core calculations do not.</p></details><details><summary>Is there a ready-to-download Mac app?</summary><p>Not yet. The source is available now, and local development builds work without an Apple Developer account. A signed and notarized download will be linked here after release verification.</p></details><details><summary>How accurate are the calculations?</summary><p>The supported input range is 2000–2050. Independent tests compare 1,040 positions and 88 representative events against JPL Horizons. All registered gates passed for those samples. Numerical precision is not the same as astronomical accuracy. <a href="https://github.com/theleoking-astrology/hypergate-bar/blob/main/docs/accuracy.md">Read the measured results and limitations.</a></p></details><details><summary>Will reminders always arrive exactly on time?</summary><p>macOS manages delivery. Sleep, Focus, permission, and other system settings can delay or suppress it. The app shows the actual queued coverage, which can be shorter than its forecast. It needs to run again to replenish reminders.</p></details><details><summary>Can I build something with the calculation engine?</summary><p>Yes. HypergateCore is a reusable Swift package, with a separate provider adapter, a compiled consumer example, a CLI and a documented JSON schema. Original code is MIT licensed. <a href="https://github.com/theleoking-astrology/hypergate-bar/blob/main/docs/developer-reuse.md">Start with the developer guide.</a></p></details></div></section>
+  </main>
+  <footer class="container site-footer"><div><img class="umbrella-wordmark" src="/assets/hypergate-wordmark.webp" width="210" height="17" loading="lazy" alt="Hypergate AI"><p>OPEN SOURCE · BUILT BY THE LEO KING</p></div><nav aria-label="Footer navigation"><a href="/changelog/">Changelog</a><a href="https://github.com/theleoking-astrology/hypergate-bar">GitHub ↗</a><a href="https://github.com/theleoking-astrology/hypergate-bar/blob/main/LICENSE">MIT license</a><a href="https://github.com/theleoking-astrology/hypergate-bar/blob/main/docs/privacy.md">Privacy</a></nav><p class="footer-note">An independent open-source utility. No accounts, analytics, or tracking scripts on this site.</p></footer>
+  <dialog id="screenshot-dialog" aria-label="Enlarged app screenshot"><button type="button" class="dialog-close" aria-label="Close enlarged screenshot">Close <span aria-hidden="true">×</span></button><img alt="" id="dialog-image"></dialog>
+</body>
+</html>

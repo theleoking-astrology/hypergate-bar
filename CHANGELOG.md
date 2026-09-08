@@ -2,6 +2,8 @@
 
 ## Unreleased — 0.1.0
 
+- A public product website with GitHub source links and this repository-backed changelog.
+- Menu-bar update availability and an Update action, with automatic checks in configured publisher builds and a user-controlled Settings toggle.
 - Native menu-bar Moon status with an on-demand Today, Upcoming, and Planets Dashboard.
 - Offline ten-body tropical geocentric positions and a cached forecast of ingresses, aspects, and stations.
 - Independent Horizons/ERFA fixtures, fixed accuracy gates, and measured residuals.

@@ -4,6 +4,32 @@ import XCTest
 @testable import HypergateBar
 
 @MainActor final class ApplicationServiceTests: XCTestCase {
+  func testAvailableUpdateCanBeStartedFromMenuAction() {
+    let driver = TestUpdateDriver()
+    let service = UpdateService(driver: driver)
+    driver.onEvent?(.available("0.2.0"))
+    XCTAssertEqual(service.actionTitle, "Update to 0.2.0…")
+    XCTAssertTrue(service.updateAvailable)
+    service.check()
+    XCTAssertEqual(driver.checks, 1)
+    driver.onEvent?(.capabilities(canCheck: false, automatic: true))
+    service.check()
+    XCTAssertEqual(driver.checks, 1)
+  }
+
+  func testUpdateErrorsDoNotMasqueradeAsCurrentVersion() {
+    let driver = TestUpdateDriver()
+    let service = UpdateService(driver: driver)
+    driver.onEvent?(.available("0.2.0"))
+    driver.onEvent?(.failed("Connection unavailable"))
+    XCTAssertFalse(service.updateAvailable)
+    XCTAssertTrue(service.status.contains("Connection unavailable"))
+    driver.onEvent?(.notAvailable)
+    XCTAssertEqual(service.status, "No compatible update is available.")
+    service.setAutomaticChecks(false)
+    XCTAssertFalse(driver.automaticChecks)
+  }
+
   func testInvalidSkyNeverBecomesAvailable() async {
     let directory = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
     let metadata = AppState.shared.provider.metadata
@@ -30,6 +56,14 @@ import XCTest
     XCTAssertEqual(state.selectedEvent?.instant, instant)
     XCTAssertEqual(state.zone.identifier, "Asia/Tokyo")
   }
+}
+
+@MainActor private final class TestUpdateDriver: UpdateDriver {
+  var onEvent: ((UpdateEvent) -> Void)?
+  var automaticChecks = true
+  var checks = 0
+  func start() { onEvent?(.capabilities(canCheck: true, automatic: automaticChecks)) }
+  func check() { checks += 1 }
 }
 
 private struct MissingSkyProvider: EphemerisProvider {

@@ -15,3 +15,9 @@ verify vendor hashes. Do not edit generated project files without project.yml.
 Keep public source free of credentials and operational/private tracker material.
 Signing/notarization and runtime acceptance are separate from compilation.
 Release automation must fail closed. Never publish an unverified binary.
+
+The separately deployed website lives in website/ and serves static public
+product information on Vercel. It must not add networking to the native app.
+Build it with node website/build.mjs; CHANGELOG.md is its changelog source.
+Use only explicitly authorized brand assets, keep site tracking absent, and
+represent source previews separately from verified signed binary downloads.

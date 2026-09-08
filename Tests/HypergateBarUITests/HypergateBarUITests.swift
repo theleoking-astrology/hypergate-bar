@@ -35,6 +35,8 @@ import XCTest
     status.click()
     XCTAssertTrue(app.buttons["Open Dashboard"].waitForExistence(timeout: 10))
     XCTAssertTrue(app.staticTexts["NEXT MOON INGRESS"].exists)
+    XCTAssertTrue(app.buttons["menu-update-action"].exists)
+    XCTAssertFalse(app.buttons["menu-update-action"].isEnabled)
     let popover = XCTAttachment(screenshot: app.screenshot())
     popover.name = "Actual MenuBarExtra popover"
     popover.lifetime = .keepAlways

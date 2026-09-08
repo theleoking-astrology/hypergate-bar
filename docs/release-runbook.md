@@ -46,6 +46,12 @@ The publisher requires `/usr/bin/trash` before creating temporary material. Its 
 
 `make release` validates configuration and requires protected publisher execution. It does not silently fall back to ad-hoc distribution. Missing credentials or failed gates block that action while local development remains available. The pipeline is configured source until a complete signed/notarized run proves it works for the publisher.
 
+## Menu-bar updates
+
+Configured publisher builds check the Sparkle feed daily by default. Settings can disable automatic checks; installation always remains a user choice. When Sparkle finds a compatible newer release, the menu label gains an arrow and the popover offers **Update to [version]…**. That action opens Sparkle's review and installation flow. Local and unconfigured fork builds show a disabled update action and explain the missing configuration.
+
+Website/changelog updates publish independently through Vercel. Pushing source alone does not create a native update. Complete the trusted distribution sequence above, increase the build number, and publish the verified archive before its feed entry. Availability states are covered by an injected offline driver; a real download/install/relaunch still requires a completed publisher release and separate acceptance evidence.
+
 ## Recovery and forks
 
 Preserve prior assets. If a bad update was published, withdraw only its feed item through a reviewed source change, document the affected version, and publish a subsequent verified release with a higher build number. Do not rewrite tags, replace old archives, or perform destructive data migrations as a rollback shortcut. A failure after public asset publication but before feed publication means the release exists but automatic discovery remains blocked; reconcile those states explicitly before retrying.

@@ -145,7 +145,18 @@ struct SettingsView: View {
             "Core calculations and reminders make no network requests. Optional publisher-configured updates are separate."
           ).foregroundStyle(.secondary)
           Text(state.updates.status)
-          Button("Check for Updates…") { state.updates.check() }.disabled(!state.updates.enabled)
+          Button(state.updates.actionTitle) { state.updates.check() }.disabled(
+            !state.updates.canCheck)
+          Toggle(
+            "Automatically check for updates",
+            isOn: Binding(
+              get: { state.updates.automaticChecks },
+              set: { state.updates.setAutomaticChecks($0) })
+          ).disabled(!state.updates.enabled)
+          Text(
+            "New versions can be installed from the menu-bar popover. Installation requires your choice."
+          )
+          .font(.caption).foregroundStyle(.secondary)
         }
       }
       .formStyle(.grouped).tabItem { Label("About", systemImage: "info.circle") }

@@ -13,3 +13,5 @@ xcuserdata/
 .venv/
 __pycache__/
 publisher.xcconfig
+.vercel/
+website/dist/
