@@ -2,6 +2,10 @@
 
 A dependency-free static product site, built with Node.js 20 or newer and hosted separately from the native application. The repository-root `vercel.json` builds `website/dist/`. No runtime API, account, tracking script, or analytics is included.
 
+Public site: https://hypergate-bar.vercel.app/ · Changelog: https://hypergate-bar.vercel.app/changelog/
+
+The Vercel project `hypergate-bar` is linked to this repository's `main` branch. Production uses the repository-root build configuration. Pull requests receive previews; pushes to `main` publish the site. Keep hosting and the native publisher pipeline separate.
+
 ```sh
 node website/check.mjs
 python3 -m http.server 4173 --directory website/dist

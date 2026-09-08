@@ -2,6 +2,8 @@
 
 **Hypergate AI Open Source** — native macOS menu-bar astrology, calculated offline.
 
+[Website](https://hypergate-bar.vercel.app/) · [Changelog](https://hypergate-bar.vercel.app/changelog/) · [Website development](website/README.md)
+
 Unreleased source implementation for macOS 14+, initially validated on Apple Silicon/macOS 27. No account, backend, AI model, paid API, telemetry, birth information, or location permission is required. No public binary release is available yet.
 
 ![Running native Dashboard](docs/screenshots/dashboard-final.png)
@@ -13,6 +15,7 @@ Unreleased source implementation for macOS 14+, initially validated on Apple Sil
 - Native Today, Upcoming and Planets dashboards, event details with UTC, filters, display zones, Settings and save-dialog JSON export.
 - Local reminders with editable leads, type/body filters, quiet hours, pause and sound. Alerts and launch at login start off.
 - Foundation-only calculation package, replaceable provider adapter, CLI and versioned JSON.
+- Menu-bar update indicator and versioned Update action, with user-controlled automatic checks in configured publisher builds.
 
 Independent tests compared 1,040 positions and 88 representative events against JPL Horizons. All frozen gates passed for those samples. Input range: 2000-01-01 through 2050-12-31 UTC. See [accuracy and limits](docs/accuracy.md); this is sampled validation, not exhaustive event-topology proof.
 
