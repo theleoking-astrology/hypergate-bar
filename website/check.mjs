@@ -20,6 +20,8 @@ for (const page of ['index.html', 'changelog/index.html']) {
   assert(!/\{\{[A-Z_]+\}\}/.test(html));
   assert(html.includes('https://github.com/theleoking-astrology/hypergate-bar'));
   assert(!/<script[^>]+src=["']https?:/i.test(html));
+  const header = html.match(/<header\b[\s\S]*?<\/header>/)?.[0] ?? '';
+  assert(header.includes('src="/assets/hypergate-wordmark.webp"'), 'The full Hypergate AI logo must appear in the header.');
   for (const match of html.matchAll(/(?:href|src)="(\/[^"#]*)/g)) {
     const path = match[1].endsWith('/') ? `${match[1]}index.html` : match[1];
     assert((await stat(resolve(dist, `.${path}`))).isFile(), `Missing ${path}`);
