@@ -2,7 +2,9 @@
 
 A dependency-free static product site, built with Node.js 20 or newer and hosted separately from the native application. The repository-root `vercel.json` builds `website/dist/`. No runtime API, account, tracking script, or analytics is included.
 
-Public site: https://hypergate-bar.vercel.app/ · Changelog: https://hypergate-bar.vercel.app/changelog/
+Public landing page: https://hypergateapp.com/ · HypergateBar: https://hypergateapp.com/hypergate-bar/ · Changelog: https://hypergateapp.com/changelog/
+
+The root is a small launch page linking the external AERA / Hypergate AI experience and the open-source HypergateBar product page. Coming-soon copy is a preview, not a released application. Only authorized public brand assets are bundled; commercial application code and services remain separate. The original Vercel hostname remains available.
 
 The Vercel project `hypergate-bar` is linked to this repository's `main` branch. Production uses the repository-root build configuration. Pull requests receive previews; pushes to `main` publish the site. Keep hosting and the native publisher pipeline separate.
 

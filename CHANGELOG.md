@@ -2,6 +2,7 @@
 
 ## Unreleased — 0.1.0
 
+- HypergateApp.com landing page with AERA / Hypergate AI and HypergateBar paths, plus coming-soon previews. HypergateBar now lives at /hypergate-bar/.
 - A public product website with GitHub source links and this repository-backed changelog.
 - Menu-bar update availability and an Update action, with automatic checks in configured publisher builds and a user-controlled Settings toggle.
 - Native menu-bar Moon status with an on-demand Today, Upcoming, and Planets Dashboard.

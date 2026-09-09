@@ -24,8 +24,9 @@ const replacements = {
   '{{LATEST_ITEMS}}': latest.items.slice(0, 3).map(item => `<li>${inline(item)}</li>`).join(''),
 };
 await mkdir(resolve(output, 'changelog'), { recursive: true });
+await mkdir(resolve(output, 'hypergate-bar'), { recursive: true });
 await mkdir(resolve(output, 'assets'), { recursive: true });
-for (const [source, target] of [['index.html', 'index.html'], ['changelog.html', 'changelog/index.html']]) {
+for (const [source, target] of [['portal.html', 'index.html'], ['index.html', 'hypergate-bar/index.html'], ['changelog.html', 'changelog/index.html']]) {
   let html = await readFile(resolve(here, source), 'utf8');
   for (const [key, value] of Object.entries(replacements)) html = html.replaceAll(key, value);
   if (/\{\{[A-Z_]+\}\}/.test(html)) throw new Error('Unresolved site template field');
@@ -33,6 +34,7 @@ for (const [source, target] of [['index.html', 'index.html'], ['changelog.html',
 }
 const files = {
   'website/styles.css': 'styles.css',
+  'website/portal.css': 'portal.css',
   'website/site.js': 'site.js',
   'website/assets/hypergate-icon.png': 'assets/hypergate-icon.png',
   'website/assets/hypergate-wordmark.webp': 'assets/hypergate-wordmark.webp',

@@ -14,7 +14,11 @@ const info = JSON.parse(await readFile(resolve(dist, 'build-info.json'), 'utf8')
 const published = JSON.parse(await readFile(resolve(dist, 'changelog.json'), 'utf8'));
 assert.equal(info.changelogSHA256, createHash('sha256').update(changelog).digest('hex'));
 assert.equal(info.entries, published.entries.length);
-for (const page of ['index.html', 'changelog/index.html']) {
+const portal = await readFile(resolve(dist, 'index.html'), 'utf8');
+assert(portal.includes('href="https://app.hypergate.ai"'), 'AERA must link to the owner-confirmed Hypergate AI destination.');
+assert(portal.includes('href="/hypergate-bar/"'));
+assert(portal.includes('coming soon.') && portal.includes('cooking in the background.'));
+for (const page of ['index.html', 'hypergate-bar/index.html', 'changelog/index.html']) {
   const html = await readFile(resolve(dist, page), 'utf8');
   assert.equal((html.match(/<h1[ >]/g) ?? []).length, 1);
   assert(!/\{\{[A-Z_]+\}\}/.test(html));

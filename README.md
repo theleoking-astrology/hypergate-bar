@@ -2,7 +2,7 @@
 
 **Hypergate AI Open Source** — native macOS menu-bar astrology, calculated offline.
 
-[Website](https://hypergate-bar.vercel.app/) · [Changelog](https://hypergate-bar.vercel.app/changelog/) · [Website development](website/README.md)
+[HypergateBar website](https://hypergateapp.com/hypergate-bar/) · [Changelog](https://hypergateapp.com/changelog/) · [Hypergate home](https://hypergateapp.com/) · [Website development](website/README.md)
 
 Unreleased source implementation for macOS 14+, initially validated on Apple Silicon/macOS 27. No account, backend, AI model, paid API, telemetry, birth information, or location permission is required. No public binary release is available yet.
 
